@@ -14,7 +14,7 @@
         <div class="container">
             <nav class="navbar">
                 <a href="#hero" class="logo">
-                    <img src="assets/images/Vivem.webp" alt="VIVEM Logo" class="logo-img">
+                    <img src="assets/images/Vivem.svg" alt="VIVEM Logo" class="logo-img">
                 </a>
                 <ul class="nav-links" id="nav-links">
                     <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
@@ -24,6 +24,9 @@
                     <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-ar">اتصل بنا</span></a></li>
                 </ul>
                  <div class="nav-utilities">
+                     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
                      <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">AR</button>
                      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
                          <span></span>
@@ -137,13 +140,16 @@
                         </div>
                     </div>
                     <div class="service-card reveal-on-scroll">
-                         <div class="service-image-half" style="background-image: url('assets/images/service-website-design.webp');"></div>
+                         <div class="service-image-half" style="background-image: url('assets/images/service-web-design.webp');"></div>
                         <div class="service-content-half">
-                            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
-                            <h3><span class="lang-en">Website Design</span><span class="lang-ar">تصميم المواقع</span></h3>
-                            <p><span class="lang-en">Building beautiful, responsive, and user-friendly websites that convert visitors into customers.</span><span class="lang-ar">بناء مواقع إلكترونية جميلة، متجاوبة وسهلة الاستخدام تحول الزوار إلى عملاء.</span></p>
-                            <a href="#contact" class="service-link lang-en">Learn More</a>
-                            <a href="#contact" class="service-link lang-ar">اعرف المزيد</a>
+                            <div class="service-icon"><i class="fas fa-code"></i></div>
+                            <h3><span class="lang-en">App & Web Development</span><span class="lang-ar">تطوير التطبيقات والمواقع</span></h3>
+                            <p>
+                                <span class="lang-en">We create stunning, responsive websites and mobile applications that provide seamless user experiences across all devices. Our development team combines modern technologies with best practices to deliver high-performance digital solutions.</span>
+                                <span class="lang-ar">نقوم بإنشاء مواقع ويب وتطبيقات جوالة مذهلة ومتجاوبة توفر تجارب مستخدم سلسة عبر جميع الأجهزة. يجمع فريق التطوير لدينا بين التقنيات الحديثة وأفضل الممارسات لتقديم حلول رقمية عالية الأداء.</span>
+                            </p>
+                             <a href="#contact" class="service-link lang-en">Learn More</a>
+                             <a href="#contact" class="service-link lang-ar">اعرف المزيد</a>
                         </div>
                     </div>
                     <div class="service-card reveal-on-scroll">
@@ -244,6 +250,13 @@
                                <p><span class="lang-en">Social Media Account Manager</span><span class="lang-ar">مدير حسابات السوشيال ميديا</span></p>
                            </div>
                        </div>
+                       <div class="team-member-card reveal-on-scroll" data-member-id="amgad">
+                           <div class="member-img" style="background-image: url('assets/images/Amgad_Ghozzy.webp');"></div>
+                           <div class="member-info">
+                               <h4><span class="lang-en">Amgad Ghozzy</span><span class="lang-ar">أمجد غزالي</span></h4>
+                               <p><span class="lang-en">App & Web Developer</span><span class="lang-ar">مطور تطبيقات ومواقع</span></p>
+                           </div>
+                       </div>
                  </div>
              </div>
         </section>
@@ -287,14 +300,19 @@
                                 <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
                                 <div class="contact-info-content">
                                     <h4><span class="lang-en">Location</span><span class="lang-ar">الموقع</span></h4>
-                                    <p><span class="lang-en">Egypt Dakahlia Almansoura</span><span class="lang-ar">مصر الدقهلية المنصورة</span></p>
+                                    <p><span class="lang-en">Almansoura, Dakahlia, Egypt</span><span class="lang-ar">المنصورة، الدقهلية، مصر</span></p>
                                 </div>
                             </div>
                             <div class="social-links">
-                                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.tiktok.com/@vivemdigital" target="_blank" class="social-link">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="https://www.instagram.com/vivemdigital0" target="_blank" class="social-link">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.facebook.com/vivemcreative" target="_blank" class="social-link">
+                                    <i class="fab fa-facebook"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -309,7 +327,7 @@
             <div class="footer-content">
                 <div class="footer-info">
                      <a href="#hero" class="logo">
-                         <img src="assets/images/Vivem.webp" alt="VIVEM Logo" class="logo-img">
+                         <img src="assets/images/Vivem.svg" alt="VIVEM Logo" class="logo-img">
                      </a>
                     <p>
                         <span class="lang-en">Crafting digital experiences that inspire action and drive growth.</span>
@@ -336,7 +354,7 @@
                      <h4><span class="lang-en">Services</span><span class="lang-ar">الخدمات</span></h4>
                      <ul>
                          <li><a href="#services"><span class="lang-en">Graphic Design</span><span class="lang-ar">التصميم الجرافيكي</span></a></li>
-                         <li><a href="#services"><span class="lang-en">Website Design</span><span class="lang-ar">تصميم المواقع</span></a></li>
+                         <li><a href="#services"><span class="lang-en">App & Web Development</span><span class="lang-ar">تطوير التطبيقات والمواقع</span></a></li>
                          <li><a href="#services"><span class="lang-en">Social Media</span><span class="lang-ar">السوشيال ميديا</span></a></li>
                          <li><a href="#services"><span class="lang-en">Advertising</span><span class="lang-ar">الإعلانات</span></a></li>
                          <li><a href="#services"><span class="lang-en">Data Analysis</span><span class="lang-ar">تحليل البيانات</span></a></li>
@@ -344,7 +362,7 @@
                  </div>
                  <div class="footer-contact">
                      <h4><span class="lang-en">Contact Us</span><span class="lang-ar">تواصل معنا</span></h4>
-                     <p><span class="lang-en">Egypt Dakahlia Almansoura</span><span class="lang-ar">مصر الدقهلية المنصورة</span></p>
+                     <p><span class="lang-en">Almansoura, Dakahlia, Egypt</span><span class="lang-ar">المنصورة، الدقهلية، مصر</span></p>
                      <p dir="ltr"><strong><span class="lang-en">Phone:</span><span class="lang-ar" style="direction: rtl; display: inline-block; margin-left: 5px;">الهاتف:</span></strong> +201063751915<br>
                         <strong><span class="lang-en">Email:</span><span class="lang-ar" style="direction: rtl; display: inline-block; margin-left: 5px;">البريد الإلكتروني:</span></strong> <a href="mailto:vivemdigital@gmail.com">vivemdigital@gmail.com</a></p>
                  </div>
