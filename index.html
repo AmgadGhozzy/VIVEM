@@ -1,33 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>VIVEM | Digital Marketing & Visual Creativity</title>
+<!-- Set saved language BEFORE first paint — prevents any bilingual flash -->
+<script>
+(function () {
+  try {
+    var l = localStorage.getItem('vivem-lang');
+    if (l === 'ar' || l === 'en') document.documentElement.lang = l;
+  } catch (e) { /* noop */ }
+  document.documentElement.dir = document.documentElement.lang === 'ar' ? 'rtl' : 'ltr';
+})();
+</script>
+<title>VIVEM | Digital Marketing &amp; Visual Creativity</title>
 <meta name="description" content="VIVEM is a creative digital agency specializing in graphic design, web & mobile development, social media management, and data-driven marketing strategies that deliver measurable results.">
 <meta name="keywords" content="VIVEM, digital marketing, graphic design, web development, mobile app development, social media management, Egypt">
 <meta name="author" content="VIVEM Digital">
 <meta property="og:type" content="website">
 <meta property="og:title" content="VIVEM | Digital Marketing & Visual Creativity">
 <meta property="og:description" content="We craft stunning designs and data-driven marketing strategies that deliver results. Let's build something amazing together.">
-<meta property="og:image" content="assets/images/Vivem.webp">
-<meta property="og:url" content="https://vivemdigital.com">
+<meta property="og:image" content="https://vivemdigital.com/assets/og/vivem-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://vivemdigital.com/">
 <meta property="og:site_name" content="VIVEM">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ar_EG">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="VIVEM | Digital Marketing & Visual Creativity">
 <meta name="twitter:description" content="We craft stunning designs and data-driven marketing strategies that deliver results.">
-<meta name="twitter:image" content="assets/images/Vivem.webp">
+<meta name="twitter:image" content="https://vivemdigital.com/assets/og/vivem-og.png">
 <link rel="canonical" href="https://vivemdigital.com/">
-<meta name="theme-color" content="#002a91">
-<!-- Google Analytics 4 — uncomment and replace G-XXXXXXXXXX with your Measurement ID:
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
--->
+<meta name="theme-color" content="#f8faff">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -37,7 +42,7 @@
       "@id": "https://vivemdigital.com/#organization",
       "name": "VIVEM",
       "url": "https://vivemdigital.com/",
-      "logo": "https://vivemdigital.com/assets/images/Vivem.webp",
+      "logo": "https://vivemdigital.com/favicon.svg",
       "description": "Creative digital agency specializing in graphic design, web and mobile development, social media management, and data-driven marketing strategies.",
       "email": "vivemdigital@gmail.com",
       "telephone": "+201063751915",
@@ -55,529 +60,519 @@
       "name": "VIVEM",
       "inLanguage": ["en", "ar"],
       "publisher": { "@id": "https://vivemdigital.com/#organization" }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://vivemdigital.com/#services",
+      "name": "VIVEM Services",
+      "itemListElement": [
+        { "@type": "Service", "position": 1, "name": "Graphic Design", "provider": { "@id": "https://vivemdigital.com/#organization" } },
+        { "@type": "Service", "position": 2, "name": "Mobile App Development", "provider": { "@id": "https://vivemdigital.com/#organization" } },
+        { "@type": "Service", "position": 3, "name": "Web Development", "provider": { "@id": "https://vivemdigital.com/#organization" } },
+        { "@type": "Service", "position": 4, "name": "Social Media Management", "provider": { "@id": "https://vivemdigital.com/#organization" } },
+        { "@type": "Service", "position": 5, "name": "Advertising Campaigns", "provider": { "@id": "https://vivemdigital.com/#organization" } },
+        { "@type": "Service", "position": 6, "name": "Digital Marketing & Data Analysis", "provider": { "@id": "https://vivemdigital.com/#organization" } }
+      ]
     }
   ]
 }
 </script>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="icon" type="image/svg+xml" href="assets/images/Vivem.svg">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<script type="module" src="/src/scripts/main.js"></script>
 </head>
 <body>
+
+<!-- SVG icon sprite (inline — no icon font, no CDN) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <defs>
+    <symbol id="i-palette" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22a10 10 0 1 1 10-10c0 2-1.5 3-3 3h-2a2 2 0 0 0-2 2c0 1 .5 1.5.5 2.5S13.5 22 12 22z"/><circle cx="7.5" cy="11.5" r="1" fill="currentColor" stroke="none"/><circle cx="10.5" cy="7.5" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="7.5" r="1" fill="currentColor" stroke="none"/><circle cx="17.5" cy="11.5" r="1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></symbol>
+    <symbol id="i-mobile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="3"/><line x1="11" y1="18" x2="13" y2="18"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.6" y1="10.5" x2="15.4" y2="6.5"/><line x1="8.6" y1="13.5" x2="15.4" y2="17.5"/></symbol>
+    <symbol id="i-bullhorn" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l14-6v14L3 13v-2z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="6" y1="20" x2="6" y2="12"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="18" y1="20" x2="18" y2="9"/></symbol>
+    <symbol id="i-lightbulb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.4 1 2.3h6c0-.9.4-1.8 1-2.3A7 7 0 0 0 12 2z"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+    <symbol id="i-chevron-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9L12 3z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></symbol>
+    <symbol id="i-tiktok" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8 1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></symbol>
+  </defs>
+</svg>
+
+<a href="#hero" class="skip-link"><span class="lang-en">Skip to content</span><span class="lang-ar">تخطَّ إلى المحتوى</span></a>
 <div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
-<header id="header">
-    <div class="container">
-        <nav class="navbar">
-            <a href="#hero" class="logo">
-                <img src="assets/images/Vivem.svg" alt="VIVEM Logo" class="logo-img">
-            </a>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
-                <li><a href="#about"><span class="lang-en">About</span><span class="lang-ar">من نحن</span></a></li>
-                <li><a href="#services"><span class="lang-en">Services</span><span class="lang-ar">خدماتنا</span></a></li>
-                <li><a href="#portfolio"><span class="lang-en">Portfolio</span><span class="lang-ar">أعمالنا</span></a></li>
-                <li><a href="#team"><span class="lang-en">Team</span><span class="lang-ar">الفريق</span></a></li>
-                <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-ar">اتصل بنا</span></a></li>
-            </ul>
-             <div class="nav-utilities">
-                 <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">AR</button>
-                 <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
-                     <span></span>
-                     <span></span>
-                     <span></span>
-                 </button>
-             </div>
-        </nav>
+
+<header class="site-header" id="site-header">
+  <div class="nav-shell">
+    <a href="#hero" class="logo" aria-label="VIVEM — home">
+      <img src="/src/assets/brand/vivem-logo.svg" alt="VIVEM" width="900" height="300">
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+        <li><a href="#about"><span class="lang-en">About</span><span class="lang-ar">من نحن</span></a></li>
+        <li><a href="#services"><span class="lang-en">Services</span><span class="lang-ar">خدماتنا</span></a></li>
+        <li><a href="#portfolio"><span class="lang-en">Work</span><span class="lang-ar">أعمالنا</span></a></li>
+        <li><a href="#team"><span class="lang-en">Team</span><span class="lang-ar">الفريق</span></a></li>
+        <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-ar">اتصل بنا</span></a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Switch to Arabic">AR</button>
+      <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </div>
 </header>
 
 <main>
-    <section id="hero" class="hero section-spacing">
-        <div class="hero-bg"></div>
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-        </div>
-        <div class="container">
-            <div class="hero-content reveal-on-scroll">
-                <h1 class="gradient-text">
-                    <span class="lang-en">Elevate Your Brand's Digital Presence</span>
-                    <span class="lang-ar">ارتقِ بحضور علامتك التجارية الرقمي</span>
-                </h1>
-                <p>
-                    <span class="lang-en">We craft stunning designs and data-driven marketing strategies that deliver results. Let's build something amazing together.</span>
-                    <span class="lang-ar">نصمم حلولاً بصرية مذهلة واستراتيجيات تسويق قائمة على البيانات تحقق نتائج. لنبني شيئًا مذهلاً معًا.</span>
-                </p>
-                <div class="hero-btns centered-btns">
-                    <a href="#services" class="btn btn-primary lang-en">Our Services</a>
-                    <a href="#services" class="btn btn-primary lang-ar">خدماتنا</a>
-                    <a href="#contact" class="btn btn-secondary lang-en">Get In Touch</a>
-                    <a href="#contact" class="btn btn-secondary lang-ar">تواصل معنا</a>
-                </div>
-            </div>
-        </div>
-        <a href="#about" class="scroll-arrow" aria-label="Scroll down">
-            <div class="arrow"><i class="fas fa-chevron-down"></i></div>
-        </a>
-    </section>
+  <!-- ============ HERO ============ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--1" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--2" aria-hidden="true"></div>
+    <div class="hero-blob hero-blob--3" aria-hidden="true"></div>
 
-    <section id="about" class="about section-spacing">
-        <div class="about-bg"></div>
-        <div class="container">
-            <div class="about-grid reveal-on-scroll">
-                <div class="about-image">
-                    <img src="assets/images/about-team.webp" alt="VIVEM Agency team working together" loading="lazy">
-                </div>
-                <div class="about-content">
-                    <span class="section-subtitle lang-en centered-subtitle">Who We Are</span>
-                    <span class="section-subtitle lang-ar centered-subtitle">من نحن</span>
-                    <h2 class="section-title">
-                        <span class="lang-en">Creative Minds, Measured Results</span>
-                        <span class="lang-ar">عقول مبدعة، نتائج قابلة للقياس</span>
-                    </h2>
-                    <p>
-                        <span class="lang-en">We are a company specializing in Digital Marketing and Visual Creativity. Our goal is to help businesses stand out in the market and achieve success through innovative and effective solutions. Our diverse team combines expertise with passion, and each one of us adds a unique touch to deliver the best possible solutions.</span>
-                        <span class="lang-ar">نحن شركة متخصصة في التسويق الرقمي والإبداع البصري، هدفنا مساعدة الشركات على التميز في السوق وتحقيق النجاح من خلال حلول مبتكرة وفعّالة. فريقنا المتنوع يجمع بين الخبرة والشغف، وكل فرد منا يضيف لمسته الخاصة لتقديم أفضل الحلول.</span>
-                    </p>
-                    <p>
-                        <span class="lang-en">We don't just provide services; we build strong partnerships with our clients. We work together to achieve optimal results, ensuring that every project we work on is distinctive and meets the goals our clients are seeking.</span>
-                        <span class="lang-ar">لا نقدم مجرد خدمات، بل نبني شراكات قوية مع عملائنا. نعمل معًا للوصول إلى أفضل النتائج، ونضمن أن يكون كل مشروع نعمل عليه مميزًا ويحقق الأهداف التي يسعى إليها العميل.</span>
-                    </p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <div class="feature-icon">💡</div>
-                            <div>
-                                <h4><span class="lang-en">Innovative Solutions</span><span class="lang-ar">حلول مبتكرة</span></h4>
-                                <p><span class="lang-en">Constantly exploring new trends and technologies.</span><span class="lang-ar">نستكشف باستمرار الاتجاهات والتقنيات الجديدة.</span></p>
-                            </div>
-                        </div>
-                        <div class="feature-item">
-                            <div class="feature-icon">🎯</div>
-                            <div>
-                                <h4><span class="lang-en">Results-Driven</span><span class="lang-ar">مدفوعون بالنتائج</span></h4>
-                                <p><span class="lang-en">Focused on delivering measurable success for clients.</span><span class="lang-ar">نركز على تحقيق نجاح ملموس لعملائنا.</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="hero-chip hero-chip--1" aria-hidden="true"><svg><use href="#i-palette"/></svg></div>
+    <div class="hero-chip hero-chip--2" aria-hidden="true"><svg><use href="#i-monitor"/></svg></div>
+    <div class="hero-chip hero-chip--3" aria-hidden="true"><svg><use href="#i-bullhorn"/></svg></div>
+    <div class="hero-chip hero-chip--4" aria-hidden="true"><svg><use href="#i-mobile"/></svg></div>
+
+    <div class="container">
+      <div class="hero-content">
+        <span class="badge reveal"><span class="badge-dot"></span>
+          <span class="lang-en">Creative Digital Agency</span><span class="lang-ar">وكالة رقمية إبداعية</span>
+        </span>
+        <h1 class="reveal" style="--reveal-delay:80ms">
+          <span class="lang-en">Elevate your brand's <span class="gradient-text">digital presence</span></span>
+          <span class="lang-ar">ارتقِ بحضور علامتك <span class="gradient-text">الرقمي</span></span>
+        </h1>
+        <p class="reveal" style="--reveal-delay:160ms">
+          <span class="lang-en">We craft stunning designs and data-driven marketing strategies that deliver measurable results. Let's build something amazing together.</span>
+          <span class="lang-ar">نصمم حلولاً بصرية مذهلة واستراتيجيات تسويق قائمة على البيانات تحقق نتائج ملموسة. لنبني شيئًا مذهلاً معًا.</span>
+        </p>
+        <div class="hero-cta reveal" style="--reveal-delay:240ms">
+          <a href="#services" class="btn btn-primary"><span class="lang-en">Explore Services</span><span class="lang-ar">استكشف خدماتنا</span></a>
+          <a href="#contact" class="btn btn-ghost"><span class="lang-en">Get In Touch</span><span class="lang-ar">تواصل معنا</span></a>
         </div>
-    </section>
-
-    <section id="stats" class="stats" aria-label="VIVEM in numbers">
-        <div class="container">
-            <div class="stats-grid reveal-on-scroll">
-                <div class="stat-item">
-                    <div class="stat-number" dir="ltr"><span class="counter" data-target="50" data-prefix="+">+50</span></div>
-                    <p class="stat-label"><span class="lang-en">Projects Completed</span><span class="lang-ar">مشروع منجز</span></p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" dir="ltr"><span class="counter" data-target="100" data-prefix="+">+100</span></div>
-                    <p class="stat-label"><span class="lang-en">Happy Clients</span><span class="lang-ar">عميل سعيد</span></p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" dir="ltr"><span class="counter" data-target="3" data-prefix="+">+3</span></div>
-                    <p class="stat-label"><span class="lang-en">Years of Experience</span><span class="lang-ar">سنوات خبرة</span></p>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number" dir="ltr"><span class="counter" data-target="98" data-suffix="%">98%</span></div>
-                    <p class="stat-label"><span class="lang-en">Client Satisfaction</span><span class="lang-ar">رضا العملاء</span></p>
-                </div>
-            </div>
+        <div class="hero-trust reveal" style="--reveal-delay:320ms">
+          <span class="hero-trust-item"><svg><use href="#i-award"/></svg><span class="lang-en">Award-level design</span><span class="lang-ar">تصميم بمستوى عالمي</span></span>
+          <span class="hero-trust-item"><svg><use href="#i-chart"/></svg><span class="lang-en">Data-driven results</span><span class="lang-ar">نتائج بالبيانات</span></span>
+          <span class="hero-trust-item"><svg><use href="#i-shield"/></svg><span class="lang-en">Reliable partnership</span><span class="lang-ar">شراكة موثوقة</span></span>
         </div>
-    </section>
+      </div>
+    </div>
+    <a href="#about" class="scroll-hint" aria-label="Scroll down"><svg><use href="#i-chevron-down"/></svg></a>
+  </section>
 
-    <section id="services" class="services section-spacing">
-        <div class="services-bg-shape"></div>
-        <div class="container">
-            <div class="services-title reveal-on-scroll">
-                <span class="section-subtitle lang-en centered-subtitle">What We Do</span>
-                <span class="section-subtitle lang-ar centered-subtitle">ماذا نقدم</span>
-                <h2 class="section-title">
-                    <span class="lang-en">Our Core Services</span>
-                    <span class="lang-ar">خدماتنا الأساسية</span>
-                </h2>
-                <p>
-                    <span class="lang-en">We offer a comprehensive suite of design and marketing services tailored to your needs.</span>
-                    <span class="lang-ar">نقدم مجموعة شاملة من خدمات التصميم والتسويق المصممة خصيصًا لتلبية احتياجاتك.</span>
-                </p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card reveal-on-scroll">
-                     <div class="service-image-half" style="background-image: url('assets/images/service-graphic-design.webp');"></div>
-                    <div class="service-content-half">
-                         <div class="service-icon"><i class="fas fa-palette"></i></div>
-                        <h3><span class="lang-en">Graphic Design</span><span class="lang-ar">التصميم الجرافيكي</span></h3>
-                        <p><span class="lang-en">Creating visually stunning brand identities, marketing materials, and digital assets that capture attention.</span><span class="lang-ar">إنشاء هويات تجارية مذهلة بصريًا، مواد تسويقية، وأصول رقمية تجذب الانتباه.</span></p>
-                        <a href="#contact" class="service-link lang-en">Learn More</a>
-                        <a href="#contact" class="service-link lang-ar">اعرف المزيد</a>
-                    </div>
-                </div>
-                 <div class="service-card reveal-on-scroll">
-                      <div class="service-image-half" style="background-image: url('assets/images/service-mobile-design.webp');"></div>
-                     <div class="service-content-half">
-                         <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
-                         <h3><span class="lang-en">Mobile App Development</span><span class="lang-ar">تطوير تطبيقات الجوال</span></h3>
-                         <p>
-                             <span class="lang-en">Crafting intuitive and high-performing mobile applications for iOS and Android, providing seamless user experiences on the go.</span>
-                             <span class="lang-ar">نقوم بتطوير تطبيقات جوال بديهية وعالية الأداء لأنظمة iOS وأندرويد، مما يوفر تجارب مستخدم سلسة أثناء التنقل.</span>
-                         </p>
-                         <a href="#contact" class="service-link lang-en">Learn More</a>
-                         <a href="#contact" class="service-link lang-ar">اعرف المزيد</a>
-                     </div>
-                 </div>
-                 <div class="service-card reveal-on-scroll">
-                      <div class="service-image-half" style="background-image: url('assets/images/service-web-design.webp');"></div>
-                     <div class="service-content-half">
-                         <div class="service-icon"><i class="fas fa-desktop"></i></div>
-                         <h3><span class="lang-en">Web Development</span><span class="lang-ar">تطوير المواقع الإلكترونية</span></h3>
-                         <p>
-                             <span class="lang-en">Building responsive and engaging websites that deliver exceptional performance and user experience across all devices and browsers.</span>
-                             <span class="lang-ar">إنشاء مواقع ويب متجاوبة وجذابة توفر أداءً وتجربة مستخدم استثنائية عبر جميع الأجهزة والمتصفحات.</span>
-                         </p>
-                          <a href="#contact" class="service-link lang-en">Learn More</a>
-                          <a href="#contact" class="service-link lang-ar">اعرف المزيد</a>
-                     </div>
-                 </div>
-                <div class="service-card reveal-on-scroll">
-                     <div class="service-image-half" style="background-image: url('assets/images/service-social-media.webp');"></div>
-                    <div class="service-content-half">
-                        <div class="service-icon"><i class="fas fa-share-alt"></i></div>
-                        <h3><span class="lang-en">Social Media Management</span><span class="lang-ar">إدارة وسائل التواصل الاجتماعي</span></h3>
-                        <p><span class="lang-en">Engaging your audience, building brand loyalty, and driving traffic through strategic social media campaigns.</span><span class="lang-ar">إشراك جمهورك، بناء ولاء للعلامة التجارية، وزيادة الزيارات عبر حملات وسائل التواصل الاجتماعي الاستراتيجية.</span></p>
-                       <a href="#contact" class="service-link lang-en">Learn More</a>
-                       <a href="#contact" class="service-link lang-ar">اعرف المزيد</a>
-                    </div>
-                </div>
-                 <div class="service-card reveal-on-scroll">
-                      <div class="service-image-half" style="background-image: url('assets/images/service-advertising.webp');"></div>
-                     <div class="service-content-half">
-                         <div class="service-icon"><i class="fas fa-bullhorn"></i></div>
-                         <h3><span class="lang-en">Advertising Campaigns</span><span class="lang-ar">حملات إعلانية</span></h3>
-                         <p><span class="lang-en">Designing and managing targeted ad campaigns across platforms like Google, Facebook, and Instagram.</span><span class="lang-ar">تصميم وإدارة حملات إعلانية مستهدفة عبر منصات مثل جوجل، فيسبوك، وإنستغرام.</span></p>
-                         <a href="#contact" class="service-link lang-en">Learn More</a>
-                         <a href="#contact" class="service-link lang-ar">اعرف المزيد</a>
-                     </div>
-                 </div>
-                <div class="service-card reveal-on-scroll">
-                     <div class="service-image-half" style="background-image: url('assets/images/service-digital-marketing.webp');"></div>
-                     <div class="service-content-half">
-                         <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
-                         <h3><span class="lang-en">Digital Marketing & Data Analysis</span><span class="lang-ar">التسويق الرقمي وتحليل البيانات</span></h3>
-                         <p><span class="lang-en">Leveraging SEO, content marketing, and data insights to optimize performance and maximize ROI.</span><span class="lang-ar">الاستفادة من تحسين محركات البحث، تسويق المحتوى، ورؤى البيانات لتحسين الأداء وزيادة العائد على الاستثمار.</span></p>
-                         <a href="#contact" class="service-link lang-en">Learn More</a>
-                         <a href="#contact" class="service-link lang-ar">اعرف المزيد</a>
-                     </div>
-                 </div>
-             </div>
-         </div>
-     </section>
+  <!-- ============ MARQUEE ============ -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marquee-track"></div>
+  </div>
 
-    <section id="team" class="team section-spacing">
-         <div class="container">
-             <div class="team-title reveal-on-scroll">
-                 <span class="section-subtitle lang-en centered-subtitle">Meet the Experts</span>
-                 <span class="section-subtitle lang-ar centered-subtitle">تعرف على الخبراء</span>
-                 <h2 class="section-title">
-                    <span class="lang-en">Our Distinguished Team</span>
-                    <span class="lang-ar">فريقنا المتميز</span>
-                 </h2>
-                 <p>
-                    <span class="lang-en">A team of specialized experts striving for your success. Click on a team member to learn more.</span>
-                    <span class="lang-ar">فريق من الخبراء المتخصصين يسعى لتحقيق نجاحك. اضغط على عضو الفريق لمعرفة المزيد.</span>
-                </p>
-             </div>
-             <div class="team-grid">
-                 <div class="team-member-card reveal-on-scroll" data-member-id="mohamed">
-                     <div class="member-img" style="background-image: url('assets/images/Mohamed_Farag.webp');"></div>
-                     <div class="member-info">
-                         <h4><span class="lang-en">Mohamed Farag</span><span class="lang-ar">محمد فرج</span></h4>
-                         <p><span class="lang-en">CEO</span><span class="lang-ar">الرئيس التنفيذي</span></p>
-                     </div>
-                 </div>
-                 <div class="team-member-card reveal-on-scroll" data-member-id="zeyad">
-                     <div class="member-img" style="background-image: url('assets/images/Zeyad_Emad.webp');"></div>
-                     <div class="member-info">
-                         <h4><span class="lang-en">Zeyad Emad</span><span class="lang-ar">زياد عماد</span></h4>
-                         <p><span class="lang-en">Operations Manager</span><span class="lang-ar">مدير العمليات</span></p>
-                     </div>
-                 </div>
-                 <div class="team-member-card reveal-on-scroll" data-member-id="seif">
-                     <div class="member-img" style="background-image: url('assets/images/Seif_Elfiky.webp');"></div>
-                     <div class="member-info">
-                         <h4><span class="lang-en">Seif Elfiky</span><span class="lang-ar">سيف الفقي</span></h4>
-                         <p><span class="lang-en">Marketing Manager</span><span class="lang-ar">مدير التسويق</span></p>
-                     </div>
-                 </div>
-                 <div class="team-member-card reveal-on-scroll" data-member-id="alhassan">
-                     <div class="member-img" style="background-image: url('assets/images/Alhassan_Nabil.webp');"></div>
-                     <div class="member-info">
-                         <h4><span class="lang-en">Alhassan Nabil</span><span class="lang-ar">الحسن نبيل</span></h4>
-                         <p><span class="lang-en">Video Editor</span><span class="lang-ar">مونتير</span></p>
-                     </div>
-                 </div>
-                  <div class="team-member-card reveal-on-scroll" data-member-id="hamza">
-                      <div class="member-img" style="background-image: url('assets/images/Hamza_Soliman.webp');"></div>
-                      <div class="member-info">
-                          <h4><span class="lang-en">Hamza Soliman</span><span class="lang-ar">حمزة سليمان</span></h4>
-                          <p><span class="lang-en">Visual Identity Designer</span><span class="lang-ar">مصمم هوية بصرية</span></p>
-                      </div>
-                  </div>
-                  <div class="team-member-card reveal-on-scroll" data-member-id="mahmoud">
-                       <div class="member-img" style="background-image: url('assets/images/Mahmoud_Farag.webp');"></div>
-                       <div class="member-info">
-                           <h4><span class="lang-en">Mahmoud Farag</span><span class="lang-ar">محمود فرج</span></h4>
-                           <p><span class="lang-en">Presentation Designer</span><span class="lang-ar">مصمم عروض تقديمية</span></p>
-                       </div>
-                   </div>
-                   <div class="team-member-card reveal-on-scroll" data-member-id="fatma">
-                       <div class="member-img" style="background-image: url('assets/images/Fatma_Gohar.webp');"></div>
-                       <div class="member-info">
-                           <h4><span class="lang-en">Fatma Gohar</span><span class="lang-ar">فاطمة جوهر</span></h4>
-                           <p><span class="lang-en">Social Media Account Manager</span><span class="lang-ar">مدير حسابات السوشيال ميديا</span></p>
-                       </div>
-                   </div>
-                   <div class="team-member-card reveal-on-scroll" data-member-id="amgad">
-                       <div class="member-img" style="background-image: url('assets/images/Amgad_Ghozzy.webp');"></div>
-                       <div class="member-info">
-                           <h4><span class="lang-en">Amgad Ghozzy</span><span class="lang-ar">أمجد غزي</span></h4>
-                           <p><span class="lang-en">Mobile App Developer</span><span class="lang-ar">مطور تطبيقات الجوال</span></p>
-                       </div>
-                   </div>
-                    <div class="team-member-card reveal-on-scroll" data-member-id="ahmed">
-                        <div class="member-img" style="background-image: url('assets/images/Ahmed_Aljohari.webp');"></div>
-                        <div class="member-info">
-                            <h4><span class="lang-en">Ahmed Aljohari</span><span class="lang-ar">أحمد الجوهري</span></h4>
-                            <p><span class="lang-en">Web Developer</span><span class="lang-ar">مطور مواقع</span></p>
-                        </div>
-                    </div>
-             </div>
-         </div>
-    </section>
-
-    <section id="portfolio" class="portfolio section-spacing">
-        <div class="container">
-            <div class="portfolio-title reveal-on-scroll">
-                <span class="section-subtitle lang-en centered-subtitle">Portfolio</span>
-                <span class="section-subtitle lang-ar centered-subtitle">معرض الأعمال</span>
-                <h2 class="section-title">
-                    <span class="lang-en">Our Work</span>
-                    <span class="lang-ar">أعمالنا</span>
-                </h2>
-                <p>
-                    <span class="lang-en">A glimpse of what we design, build and launch for our clients. Click any project to learn more.</span>
-                    <span class="lang-ar">نماذج مما نصممه ونبنيه ونطلقه لعملائنا. اضغط على أي عمل لمعرفة المزيد.</span>
-                </p>
-            </div>
-            <div class="portfolio-filters reveal-on-scroll">
-                <button class="filter-btn active" data-filter="all"><span class="lang-en">All</span><span class="lang-ar">الكل</span></button>
-                <button class="filter-btn" data-filter="design"><span class="lang-en">Design</span><span class="lang-ar">تصميم</span></button>
-                <button class="filter-btn" data-filter="development"><span class="lang-en">Development</span><span class="lang-ar">تطوير</span></button>
-                <button class="filter-btn" data-filter="marketing"><span class="lang-en">Marketing</span><span class="lang-ar">تسويق</span></button>
-            </div>
-            <div class="portfolio-grid" id="portfolio-grid"></div>
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-media reveal">
+          <div class="about-media-frame">
+            <img src="/src/assets/images/about-team.webp" alt="VIVEM agency team working together" loading="lazy" decoding="async">
+          </div>
+          <div class="about-float-card">
+            <span class="float-num gradient-text" dir="ltr">+50</span>
+            <span class="float-label"><span class="lang-en">Projects<br>delivered</span><span class="lang-ar">مشروعًا<br>تم تسليمه</span></span>
+          </div>
         </div>
-    </section>
-
-    <section id="contact" class="contact section-spacing">
-         <div class="container">
-            <div class="contact-title reveal-on-scroll">
-                <span class="section-subtitle lang-en centered-subtitle">Get In Touch</span>
-                <span class="section-subtitle lang-ar centered-subtitle">تواصل معنا</span>
-                <h2 class="section-title">
-                    <span class="lang-en">Let's Start a Conversation</span>
-                    <span class="lang-ar">لنبدأ محادثة</span>
-                </h2>
-                <p>
-                    <span class="lang-en">We're excited to hear about your project. Reach out to us!</span>
-                    <span class="lang-ar">نحن متحمسون لسماع تفاصيل مشروعك. تواصل معنا!</span>
-                </p>
+        <div class="about-content reveal" style="--reveal-delay:120ms">
+          <span class="badge"><span class="badge-dot"></span><span class="lang-en">Who We Are</span><span class="lang-ar">من نحن</span></span>
+          <h2>
+            <span class="lang-en">Creative minds, <span class="gradient-text">measured results</span></span>
+            <span class="lang-ar">عقول مبدعة، <span class="gradient-text">نتائج قابلة للقياس</span></span>
+          </h2>
+          <p>
+            <span class="lang-en">We are a company specializing in Digital Marketing and Visual Creativity. Our goal is to help businesses stand out and achieve success through innovative, effective solutions — combining expertise with passion, where each of us adds a unique touch.</span>
+            <span class="lang-ar">نحن شركة متخصصة في التسويق الرقمي والإبداع البصري، هدفنا مساعدة الشركات على التميز وتحقيق النجاح من خلال حلول مبتكرة وفعّالة. فريقنا يجمع بين الخبرة والشغف، وكل فرد منا يضيف لمسته الخاصة.</span>
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon"><svg><use href="#i-lightbulb"/></svg></div>
+              <div>
+                <h4><span class="lang-en">Innovative Solutions</span><span class="lang-ar">حلول مبتكرة</span></h4>
+                <p><span class="lang-en">Constantly exploring new trends and technologies.</span><span class="lang-ar">نستكشف باستمرار الاتجاهات والتقنيات الجديدة.</span></p>
+              </div>
             </div>
-            <div class="contact-wrapper reveal-on-scroll">
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>
-                            <span class="lang-en">Contact Information</span>
-                            <span class="lang-ar">معلومات التواصل</span>
-                        </h3>
-                        <div class="contact-info-item">
-                            <div class="contact-icon"><i class="fas fa-phone"></i></div>
-                            <div class="contact-info-content">
-                                <h4><span class="lang-en">Phone</span><span class="lang-ar">الهاتف</span></h4>
-                                <p dir="ltr"><a href="tel:+201063751915">+201063751915</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
-                            <div class="contact-info-content">
-                                <h4><span class="lang-en">Email</span><span class="lang-ar">البريد الإلكتروني</span></h4>
-                                <p dir="ltr"><a href="mailto:vivemdigital@gmail.com">vivemdigital@gmail.com</a></p>
-                            </div>
-                        </div>
-                        <div class="contact-info-item">
-                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-                            <div class="contact-info-content">
-                                <h4><span class="lang-en">Location</span><span class="lang-ar">الموقع</span></h4>
-                                <p><span class="lang-en">Reach out to us from anywhere.</span><span class="lang-ar">تواصل معنا من أي مكان.</span></p>
-                            </div>
-                        </div>
-                        <div class="social-links">
-                            <a href="https://wa.me/+201063751915" target="_blank" class="social-link whatsapp-link" aria-label="WhatsApp">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@vivemdigital" target="_blank" class="social-link" aria-label="TikTok">
-                                <i class="fab fa-tiktok"></i>
-                            </a>
-                            <a href="https://www.instagram.com/vivemdigital0" target="_blank" class="social-link" aria-label="Instagram">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a href="https://www.facebook.com/vivemcreative" target="_blank" class="social-link" aria-label="Facebook">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                             <a href="https://www.linkedin.com/company/vivem" target="_blank" class="social-link linkedin-link" aria-label="LinkedIn">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="contact-form-container">
-                    <form id="contact-form" class="contact-form" novalidate>
-                        <h3><span class="lang-en">Send Us a Message</span><span class="lang-ar">أرسل لنا رسالة</span></h3>
-                        <p class="form-intro"><span class="lang-en">Fill out the form below and we'll get back to you as soon as possible.</span><span class="lang-ar">املأ النموذج التالي وسنعاود التواصل معك في أقرب وقت.</span></p>
-                        <div class="form-group">
-                            <label for="cf-name"><span class="lang-en">Name</span><span class="lang-ar">الاسم</span> <span class="required">*</span></label>
-                            <input type="text" id="cf-name" name="name" autocomplete="name" placeholder="Your name">
-                            <span class="form-error" id="cf-name-error" role="alert"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="cf-email"><span class="lang-en">Email</span><span class="lang-ar">البريد الإلكتروني</span> <span class="required">*</span></label>
-                            <input type="email" id="cf-email" name="email" autocomplete="email" placeholder="name@example.com">
-                            <span class="form-error" id="cf-email-error" role="alert"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="cf-subject"><span class="lang-en">Subject</span><span class="lang-ar">الموضوع</span></label>
-                            <input type="text" id="cf-subject" name="subject" placeholder="How can we help?">
-                        </div>
-                        <div class="form-group">
-                            <label for="cf-message"><span class="lang-en">Message</span><span class="lang-ar">الرسالة</span> <span class="required">*</span></label>
-                            <textarea id="cf-message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
-                            <span class="form-error" id="cf-message-error" role="alert"></span>
-                        </div>
-                        <button type="submit" class="btn btn-primary form-submit">
-                            <span class="lang-en">Send Message</span><span class="lang-ar">إرسال الرسالة</span>
-                        </button>
-                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
-                    </form>
-                    </div>
-                </div>
+            <div class="feature-item">
+              <div class="feature-icon"><svg><use href="#i-target"/></svg></div>
+              <div>
+                <h4><span class="lang-en">Results-Driven</span><span class="lang-ar">مدفوعون بالنتائج</span></h4>
+                <p><span class="lang-en">Focused on delivering measurable success for clients.</span><span class="lang-ar">نركز على تحقيق نجاح ملموس لعملائنا.</span></p>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section id="stats" class="stats" aria-label="VIVEM in numbers">
+    <div class="container">
+      <div class="stat-item">
+        <div class="stat-number" dir="ltr"><span class="counter" data-target="50" data-prefix="+">+50</span></div>
+        <p class="stat-label"><span class="lang-en">Projects Completed</span><span class="lang-ar">مشروع منجز</span></p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" dir="ltr"><span class="counter" data-target="100" data-prefix="+">+100</span></div>
+        <p class="stat-label"><span class="lang-en">Happy Clients</span><span class="lang-ar">عميل سعيد</span></p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" dir="ltr"><span class="counter" data-target="3" data-prefix="+">+3</span></div>
+        <p class="stat-label"><span class="lang-en">Years of Experience</span><span class="lang-ar">سنوات خبرة</span></p>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number" dir="ltr"><span class="counter" data-target="98" data-suffix="%">98%</span></div>
+        <p class="stat-label"><span class="lang-en">Client Satisfaction</span><span class="lang-ar">رضا العملاء</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section id="services" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge"><span class="badge-dot"></span><span class="lang-en">What We Do</span><span class="lang-ar">ماذا نقدم</span></span>
+        <h2>
+          <span class="lang-en">Our core <span class="gradient-text">services</span></span>
+          <span class="lang-ar">خدماتنا <span class="gradient-text">الأساسية</span></span>
+        </h2>
+        <p><span class="lang-en">A comprehensive suite of design and marketing services tailored to your needs.</span><span class="lang-ar">مجموعة شاملة من خدمات التصميم والتسويق المصممة خصيصًا لتلبية احتياجاتك.</span></p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card service-card--wide reveal">
+          <div class="service-icon"><svg><use href="#i-palette"/></svg></div>
+          <h3><span class="lang-en">Graphic Design &amp; Brand Identity</span><span class="lang-ar">التصميم الجرافيكي والهوية البصرية</span></h3>
+          <p><span class="lang-en">Visually stunning brand identities, marketing materials, and digital assets that capture attention and stay memorable.</span><span class="lang-ar">هويات تجارية مذهلة بصريًا، ومواد تسويقية وأصول رقمية تجذب الانتباه وتبقى في الذاكرة.</span></p>
+          <a href="#contact" class="service-link"><span class="lang-en">Start a project</span><span class="lang-ar">ابدأ مشروعك</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="service-card reveal" style="--reveal-delay:90ms">
+          <div class="service-icon"><svg><use href="#i-mobile"/></svg></div>
+          <h3><span class="lang-en">Mobile App Development</span><span class="lang-ar">تطوير تطبيقات الجوال</span></h3>
+          <p><span class="lang-en">Intuitive, high-performing iOS and Android apps with seamless user experiences on the go.</span><span class="lang-ar">تطبيقات iOS وأندرويد بديهية وعالية الأداء تمنح تجربة استخدام سلسة أينما كنت.</span></p>
+          <a href="#contact" class="service-link"><span class="lang-en">Start a project</span><span class="lang-ar">ابدأ مشروعك</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><svg><use href="#i-monitor"/></svg></div>
+          <h3><span class="lang-en">Web Development</span><span class="lang-ar">تطوير المواقع الإلكترونية</span></h3>
+          <p><span class="lang-en">Responsive, engaging websites delivering exceptional performance across all devices and browsers.</span><span class="lang-ar">مواقع ويب متجاوبة وجذابة توفر أداءً استثنائيًا عبر جميع الأجهزة والمتصفحات.</span></p>
+          <a href="#contact" class="service-link"><span class="lang-en">Start a project</span><span class="lang-ar">ابدأ مشروعك</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="service-card reveal" style="--reveal-delay:90ms">
+          <div class="service-icon"><svg><use href="#i-share"/></svg></div>
+          <h3><span class="lang-en">Social Media Management</span><span class="lang-ar">إدارة وسائل التواصل</span></h3>
+          <p><span class="lang-en">Engaging your audience, building loyalty, and driving traffic through strategic campaigns.</span><span class="lang-ar">إشراك جمهورك وبناء الولاء وزيادة الزيارات عبر حملات استراتيجية.</span></p>
+          <a href="#contact" class="service-link"><span class="lang-en">Start a project</span><span class="lang-ar">ابدأ مشروعك</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="service-card reveal" style="--reveal-delay:180ms">
+          <div class="service-icon"><svg><use href="#i-bullhorn"/></svg></div>
+          <h3><span class="lang-en">Advertising Campaigns</span><span class="lang-ar">الحملات الإعلانية</span></h3>
+          <p><span class="lang-en">Targeted ad campaigns across Google, Facebook, and Instagram that convert.</span><span class="lang-ar">حملات إعلانية مستهدفة عبر جوجل وفيسبوك وإنستغرام تحقق تحويلات فعلية.</span></p>
+          <a href="#contact" class="service-link"><span class="lang-en">Start a project</span><span class="lang-ar">ابدأ مشروعك</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+        <div class="service-card service-card--wide reveal" style="--reveal-delay:270ms">
+          <div class="service-icon"><svg><use href="#i-chart"/></svg></div>
+          <h3><span class="lang-en">Digital Marketing &amp; Data Analysis</span><span class="lang-ar">التسويق الرقمي وتحليل البيانات</span></h3>
+          <p><span class="lang-en">SEO, content marketing, and data insights that optimize performance and maximize ROI — decisions based on numbers, not guesses.</span><span class="lang-ar">تحسين محركات البحث، وتسويق المحتوى، ورؤى البيانات لتحسين الأداء وزيادة العائد — قرارات مبنية على أرقام لا تخمين.</span></p>
+          <a href="#contact" class="service-link"><span class="lang-en">Start a project</span><span class="lang-ar">ابدأ مشروعك</span><svg><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PORTFOLIO ============ -->
+  <section id="portfolio" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge"><span class="badge-dot"></span><span class="lang-en">Portfolio</span><span class="lang-ar">معرض الأعمال</span></span>
+        <h2>
+          <span class="lang-en">Work that <span class="gradient-text">speaks</span></span>
+          <span class="lang-ar">أعمال <span class="gradient-text">تتحدث عنا</span></span>
+        </h2>
+        <p><span class="lang-en">A glimpse of what we design, build and launch for our clients. Click any project to learn more.</span><span class="lang-ar">نماذج مما نصممه ونبنيه ونطلقه لعملائنا. اضغط على أي عمل لمعرفة المزيد.</span></p>
+      </div>
+      <div class="portfolio-filters reveal" role="group" aria-label="Filter projects">
+        <button class="filter-btn is-active" data-filter="all" type="button" aria-pressed="true"><span class="lang-en">All</span><span class="lang-ar">الكل</span></button>
+        <button class="filter-btn" data-filter="design" type="button" aria-pressed="false"><span class="lang-en">Design</span><span class="lang-ar">تصميم</span></button>
+        <button class="filter-btn" data-filter="development" type="button" aria-pressed="false"><span class="lang-en">Development</span><span class="lang-ar">تطوير</span></button>
+        <button class="filter-btn" data-filter="marketing" type="button" aria-pressed="false"><span class="lang-en">Marketing</span><span class="lang-ar">تسويق</span></button>
+      </div>
+      <div class="portfolio-grid" id="portfolio-grid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONIALS ============ -->
+  <section id="testimonials" class="section section-alt testimonials-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge"><span class="badge-dot"></span><span class="lang-en">Testimonials</span><span class="lang-ar">آراء العملاء</span></span>
+        <h2>
+          <span class="lang-en">What our <span class="gradient-text">clients say</span></span>
+          <span class="lang-ar">ماذا يقول <span class="gradient-text">عملاؤنا</span></span>
+        </h2>
+        <p><span class="lang-en">Real feedback from the brands we've helped grow.</span><span class="lang-ar">آراء حقيقية من العلامات التي ساعدناها على النمو.</span></p>
+      </div>
+      <div class="carousel reveal">
+        <div class="carousel-viewport">
+          <div class="carousel-track"></div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn carousel-btn--prev" type="button" aria-label="Previous testimonial"><svg><use href="#i-arrow"/></svg></button>
+          <div class="carousel-dots"></div>
+          <button class="carousel-btn carousel-btn--next" type="button" aria-label="Next testimonial"><svg><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM ============ -->
+  <section id="team" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge"><span class="badge-dot"></span><span class="lang-en">Meet the Experts</span><span class="lang-ar">تعرف على الخبراء</span></span>
+        <h2>
+          <span class="lang-en">Our distinguished <span class="gradient-text">team</span></span>
+          <span class="lang-ar">فريقنا <span class="gradient-text">المتميز</span></span>
+        </h2>
+        <p><span class="lang-en">A team of specialized experts striving for your success. Click a member to learn more.</span><span class="lang-ar">فريق من الخبراء المتخصصين يسعى لتحقيق نجاحك. اضغط على أي عضو لمعرفة المزيد.</span></p>
+      </div>
+      <div class="team-grid">
+        <button class="team-card reveal" type="button" data-member-id="mohamed" aria-haspopup="dialog">
+          <span class="team-photo"><img src="/src/assets/images/Mohamed_Farag.webp" alt="Mohamed Farag" loading="lazy" decoding="async"></span>
+          <h4><span class="lang-en">Mohamed Farag</span><span class="lang-ar">محمد فرج</span></h4>
+          <p class="team-role"><span class="lang-en">CEO</span><span class="lang-ar">الرئيس التنفيذي</span></p>
+        </button>
+        <button class="team-card reveal" type="button" data-member-id="zeyad" aria-haspopup="dialog" style="--reveal-delay:60ms">
+          <span class="team-photo"><img src="/src/assets/images/Zeyad_Emad.webp" alt="Zeyad Emad" loading="lazy" decoding="async"></span>
+          <h4><span class="lang-en">Zeyad Emad</span><span class="lang-ar">زياد عماد</span></h4>
+          <p class="team-role"><span class="lang-en">Operations Manager</span><span class="lang-ar">مدير العمليات</span></p>
+        </button>
+        <button class="team-card reveal" type="button" data-member-id="seif" aria-haspopup="dialog" style="--reveal-delay:120ms">
+          <span class="team-photo"><img src="/src/assets/images/Seif_Elfiky.webp" alt="Seif Elfiky" loading="lazy" decoding="async"></span>
+          <h4><span class="lang-en">Seif Elfiky</span><span class="lang-ar">سيف الفقي</span></h4>
+          <p class="team-role"><span class="lang-en">Marketing Manager</span><span class="lang-ar">مدير التسويق</span></p>
+        </button>
+        <button class="team-card reveal" type="button" data-member-id="alhassan" aria-haspopup="dialog">
+          <span class="team-photo"><img src="/src/assets/images/Alhassan_Nabil.webp" alt="Alhassan Nabil" loading="lazy" decoding="async"></span>
+          <h4><span class="lang-en">Alhassan Nabil</span><span class="lang-ar">الحسن نبيل</span></h4>
+          <p class="team-role"><span class="lang-en">Video Editor</span><span class="lang-ar">مونتير</span></p>
+        </button>
+        <button class="team-card reveal" type="button" data-member-id="hamza" aria-haspopup="dialog" style="--reveal-delay:60ms">
+          <span class="team-photo"><img src="/src/assets/images/Hamza_Soliman.webp" alt="Hamza Soliman" loading="lazy" decoding="async"></span>
+          <h4><span class="lang-en">Hamza Soliman</span><span class="lang-ar">حمزة سليمان</span></h4>
+          <p class="team-role"><span class="lang-en">Visual Identity Designer</span><span class="lang-ar">مصمم هوية بصرية</span></p>
+        </button>
+        <button class="team-card reveal" type="button" data-member-id="mahmoud" aria-haspopup="dialog" style="--reveal-delay:120ms">
+          <span class="team-photo"><img src="/src/assets/images/Mahmoud_Farag.webp" alt="Mahmoud Farag" loading="lazy" decoding="async"></span>
+          <h4><span class="lang-en">Mahmoud Farag</span><span class="lang-ar">محمود فرج</span></h4>
+          <p class="team-role"><span class="lang-en">Presentation Designer</span><span class="lang-ar">مصمم عروض تقديمية</span></p>
+        </button>
+        <button class="team-card reveal" type="button" data-member-id="fatma" aria-haspopup="dialog">
+          <span class="team-photo"><img src="/src/assets/images/Fatma_Gohar.webp" alt="Fatma Gohar" loading="lazy" decoding="async"></span>
+          <h4><span class="lang-en">Fatma Gohar</span><span class="lang-ar">فاطمة جوهر</span></h4>
+          <p class="team-role"><span class="lang-en">Social Media Account Manager</span><span class="lang-ar">مدير حسابات السوشيال ميديا</span></p>
+        </button>
+        <button class="team-card reveal" type="button" data-member-id="amgad" aria-haspopup="dialog" style="--reveal-delay:60ms">
+          <span class="team-photo"><img src="/src/assets/images/Amgad_Ghozzy.webp" alt="Amgad Ghozzy" loading="lazy" decoding="async"></span>
+          <h4><span class="lang-en">Amgad Ghozzy</span><span class="lang-ar">أمجد غزي</span></h4>
+          <p class="team-role"><span class="lang-en">Mobile App Developer</span><span class="lang-ar">مطور تطبيقات الجوال</span></p>
+        </button>
+        <button class="team-card reveal" type="button" data-member-id="ahmed" aria-haspopup="dialog" style="--reveal-delay:120ms">
+          <span class="team-photo"><img src="/src/assets/images/Ahmed_Aljohari.webp" alt="Ahmed Aljohari" loading="lazy" decoding="async"></span>
+          <h4><span class="lang-en">Ahmed Aljohari</span><span class="lang-ar">أحمد الجوهري</span></h4>
+          <p class="team-role"><span class="lang-en">Web Developer</span><span class="lang-ar">مطور مواقع</span></p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="badge"><span class="badge-dot"></span><span class="lang-en">Get In Touch</span><span class="lang-ar">تواصل معنا</span></span>
+        <h2>
+          <span class="lang-en">Let's start a <span class="gradient-text">conversation</span></span>
+          <span class="lang-ar">لنبدأ <span class="gradient-text">محادثة</span></span>
+        </h2>
+        <p><span class="lang-en">We're excited to hear about your project. Reach out to us!</span><span class="lang-ar">نحن متحمسون لسماع تفاصيل مشروعك. تواصل معنا!</span></p>
+      </div>
+      <div class="contact-wrapper reveal">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-icon"><svg><use href="#i-phone"/></svg></div>
+            <div>
+              <h4><span class="lang-en">Phone</span><span class="lang-ar">الهاتف</span></h4>
+              <p dir="ltr"><a href="tel:+201063751915">+20 106 375 1915</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><svg><use href="#i-mail"/></svg></div>
+            <div>
+              <h4><span class="lang-en">Email</span><span class="lang-ar">البريد الإلكتروني</span></h4>
+              <p dir="ltr"><a href="mailto:vivemdigital@gmail.com">vivemdigital@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><svg><use href="#i-pin"/></svg></div>
+            <div>
+              <h4><span class="lang-en">Location</span><span class="lang-ar">الموقع</span></h4>
+              <p><span class="lang-en">Egypt — working with clients worldwide.</span><span class="lang-ar">مصر — ونعمل مع عملاء في كل مكان.</span></p>
+            </div>
+          </div>
+          <div class="contact-social">
+            <a href="https://wa.me/201063751915" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+            <a href="https://www.tiktok.com/@vivemdigital" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok"><svg><use href="#i-tiktok"/></svg></a>
+            <a href="https://www.instagram.com/vivemdigital0" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+            <a href="https://www.facebook.com/vivemcreative" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a>
+            <a href="https://www.linkedin.com/company/vivem" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <h3><span class="lang-en">Send us a message</span><span class="lang-ar">أرسل لنا رسالة</span></h3>
+          <p class="form-intro"><span class="lang-en">Fill out the form and we'll get back to you as soon as possible.</span><span class="lang-ar">املأ النموذج وسنعاود التواصل معك في أقرب وقت.</span></p>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="cf-name"><span class="lang-en">Name</span><span class="lang-ar">الاسم</span> <span class="required" aria-hidden="true">*</span></label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" placeholder="Your name">
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="cf-email"><span class="lang-en">Email</span><span class="lang-ar">البريد الإلكتروني</span> <span class="required" aria-hidden="true">*</span></label>
+              <input type="email" id="cf-email" name="email" autocomplete="email" placeholder="name@example.com">
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group form-group--full">
+              <label for="cf-subject"><span class="lang-en">Subject</span><span class="lang-ar">الموضوع</span></label>
+              <input type="text" id="cf-subject" name="subject" placeholder="How can we help?">
+            </div>
+            <div class="form-group form-group--full">
+              <label for="cf-message"><span class="lang-en">Message</span><span class="lang-ar">الرسالة</span> <span class="required" aria-hidden="true">*</span></label>
+              <textarea id="cf-message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+              <span class="form-error" role="alert"></span>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit">
+            <span class="lang-en">Send Message</span><span class="lang-ar">إرسال الرسالة</span>
+          </button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
 </main>
 
-<footer id="footer">
-    <div class="footer-pattern"></div>
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-info">
-                 <a href="#hero" class="logo">
-                     <img src="assets/images/Vivem.svg" alt="VIVEM Logo" class="logo-img" loading="lazy">
-                 </a>
-                <p>
-                    <span class="lang-en">Crafting digital experiences that inspire action and drive growth.</span>
-                    <span class="lang-ar">نصمم تجارب رقمية تلهم وتدفع النمو.</span>
-                </p>
-                 <div class="social-links footer-social">
-                     <a href="https://wa.me/+201063751915" target="_blank" class="social-link whatsapp-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.tiktok.com/@vivemdigital" target="_blank" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.instagram.com/vivemdigital0" target="_blank" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/vivemcreative" target="_blank" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.linkedin.com/company/vivem" target="_blank" class="social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                 </div>
-            </div>
-            <div class="footer-links">
-                <h4><span class="lang-en">Quick Links</span><span class="lang-ar">روابط سريعة</span></h4>
-                <ul>
-                    <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
-                    <li><a href="#about"><span class="lang-en">About Us</span><span class="lang-ar">من نحن</span></a></li>
-                    <li><a href="#services"><span class="lang-en">Services</span><span class="lang-ar">خدماتنا</span></a></li>
-                    <li><a href="#portfolio"><span class="lang-en">Portfolio</span><span class="lang-ar">أعمالنا</span></a></li>
-                    <li><a href="#team"><span class="lang-en">Team</span><span class="lang-ar">الفريق</span></a></li>
-                    <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-ar">اتصل بنا</span></a></li>
-                </ul>
-            </div>
-             <div class="footer-links">
-                 <h4><span class="lang-en">Services</span><span class="lang-ar">الخدمات</span></h4>
-                 <ul>
-                     <li><a href="#services"><span class="lang-en">Graphic Design</span><span class="lang-ar">التصميم الجرافيكي</span></a></li>
-                     <li><a href="#services"><span class="lang-en">Mobile App Development</span><span class="lang-ar">تطوير تطبيقات الجوال</span></a></li>
-                     <li><a href="#services"><span class="lang-en">Web Development</span><span class="lang-ar">تطوير المواقع</span></a></li>
-                     <li><a href="#services"><span class="lang-en">Social Media</span><span class="lang-ar">السوشيال ميديا</span></a></li>
-                     <li><a href="#services"><span class="lang-en">Advertising</span><span class="lang-ar">الإعلانات</span></a></li>
-                     <li><a href="#services"><span class="lang-en">Data Analysis</span><span class="lang-ar">تحليل البيانات</span></a></li>
-                 </ul>
-             </div>
-             <div class="footer-contact">
-                 <h4><span class="lang-en">Contact Us</span><span class="lang-ar">اتصل بنا</span></h4>
-                 <p><span class="lang-en">Reach out to us from anywhere.</span><span class="lang-ar">تواصل معنا من أي مكان.</span></p>
-                 <p dir="ltr">
-                     <strong><span class="lang-en">Phone:</span><span class="lang-ar">الهاتف:</span></strong> <a href="tel:+201063751915">+201063751915</a><br>
-                    <strong><span class="lang-en">Email:</span><span class="lang-ar">البريد الإلكتروني:</span></strong> <a href="mailto:vivemdigital@gmail.com">vivemdigital@gmail.com</a></p>
-             </div>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#hero" class="logo" aria-label="VIVEM — back to top">
+          <img src="/src/assets/brand/vivem-logo.svg" alt="VIVEM" width="900" height="300" loading="lazy">
+        </a>
+        <p><span class="lang-en">Crafting digital experiences that inspire action and drive growth.</span><span class="lang-ar">نصمم تجارب رقمية تلهم وتدفع النمو.</span></p>
+        <div class="footer-social">
+          <a href="https://wa.me/201063751915" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+          <a href="https://www.tiktok.com/@vivemdigital" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="TikTok"><svg><use href="#i-tiktok"/></svg></a>
+          <a href="https://www.instagram.com/vivemdigital0" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram"><svg><use href="#i-instagram"/></svg></a>
+          <a href="https://www.facebook.com/vivemcreative" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook"><svg><use href="#i-facebook"/></svg></a>
+          <a href="https://www.linkedin.com/company/vivem" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn"><svg><use href="#i-linkedin"/></svg></a>
         </div>
-        <div class="copyright">
-            © <span id="current-year"></span> VIVEM. <span class="lang-en">All Rights Reserved.</span><span class="lang-ar">جميع الحقوق محفوظة.</span>
-            <div class="developer-signature">
-                <span class="lang-en">Developed by <a href="https://wa.me/+201033552012" target="_blank" style="color: #4a6bff;">Amgad Ghozzy</a></span>
-                <span class="lang-ar">تم التطوير بواسطة <a href="https://wa.me/+201033552012" target="_blank" style="color: #4a6bff;">أمجد غزي</a></span>
-            </div>
-        </div>
+      </div>
+      <div class="footer-col">
+        <h4><span class="lang-en">Quick Links</span><span class="lang-ar">روابط سريعة</span></h4>
+        <ul>
+          <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
+          <li><a href="#about"><span class="lang-en">About Us</span><span class="lang-ar">من نحن</span></a></li>
+          <li><a href="#services"><span class="lang-en">Services</span><span class="lang-ar">خدماتنا</span></a></li>
+          <li><a href="#portfolio"><span class="lang-en">Portfolio</span><span class="lang-ar">أعمالنا</span></a></li>
+          <li><a href="#team"><span class="lang-en">Team</span><span class="lang-ar">الفريق</span></a></li>
+          <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-ar">اتصل بنا</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><span class="lang-en">Services</span><span class="lang-ar">الخدمات</span></h4>
+        <ul>
+          <li><a href="#services"><span class="lang-en">Graphic Design</span><span class="lang-ar">التصميم الجرافيكي</span></a></li>
+          <li><a href="#services"><span class="lang-en">Mobile Apps</span><span class="lang-ar">تطبيقات الجوال</span></a></li>
+          <li><a href="#services"><span class="lang-en">Web Development</span><span class="lang-ar">تطوير المواقع</span></a></li>
+          <li><a href="#services"><span class="lang-en">Social Media</span><span class="lang-ar">السوشيال ميديا</span></a></li>
+          <li><a href="#services"><span class="lang-en">Advertising</span><span class="lang-ar">الإعلانات</span></a></li>
+          <li><a href="#services"><span class="lang-en">Data Analysis</span><span class="lang-ar">تحليل البيانات</span></a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4><span class="lang-en">Contact Us</span><span class="lang-ar">اتصل بنا</span></h4>
+        <p class="footer-contact-line"><svg><use href="#i-phone"/></svg><a href="tel:+201063751915" dir="ltr">+20 106 375 1915</a></p>
+        <p class="footer-contact-line"><svg><use href="#i-mail"/></svg><a href="mailto:vivemdigital@gmail.com">vivemdigital@gmail.com</a></p>
+        <p class="footer-contact-line"><svg><use href="#i-pin"/></svg><span><span class="lang-en">Egypt — worldwide</span><span class="lang-ar">مصر — وحول العالم</span></span></p>
+      </div>
     </div>
+    <div class="footer-bottom">
+      <p>© <span id="current-year">2026</span> VIVEM. <span class="lang-en">All rights reserved.</span><span class="lang-ar">جميع الحقوق محفوظة.</span></p>
+      <p class="developer-signature">
+        <span class="lang-en">Developed by <a href="https://wa.me/201033552012" target="_blank" rel="noopener noreferrer">Amgad Ghozzy</a></span>
+        <span class="lang-ar">تم التطوير بواسطة <a href="https://wa.me/201033552012" target="_blank" rel="noopener noreferrer">أمجد غزي</a></span>
+      </p>
+    </div>
+  </div>
 </footer>
 
-<div class="modal-overlay" id="team-modal-overlay">
-    <div class="modal-content" id="team-modal-content">
-        <button class="modal-close-btn" id="team-modal-close" aria-label="Close modal">×</button>
-        <div class="modal-body">
-            <div class="modal-image-wrapper">
-                 <img src="" alt="Team Member Photo" class="modal-member-img" id="modal-member-img">
-            </div>
-            <div class="modal-text-content">
-                 <h3 id="modal-member-name"></h3>
-                 <p class="modal-member-role" id="modal-member-role"></p>
-                 <p class="modal-member-description" id="modal-member-description"></p>
-            </div>
-        </div>
+<!-- ============ DIALOGS ============ -->
+<dialog class="app-dialog" id="team-dialog" aria-labelledby="team-dialog-name">
+  <button class="dialog-close" type="button" aria-label="Close dialog"><svg><use href="#i-close"/></svg></button>
+  <div class="team-dialog-body">
+    <img class="team-dialog-photo" src="" alt="">
+    <div>
+      <h3 id="team-dialog-name"></h3>
+      <p class="team-dialog-role"></p>
+      <p class="team-dialog-desc"></p>
     </div>
-</div>
+  </div>
+</dialog>
 
-<div class="modal-overlay" id="portfolio-lightbox">
-    <div class="modal-content portfolio-lightbox-content">
-        <button class="modal-close-btn" id="portfolio-lightbox-close" aria-label="Close modal">×</button>
-        <div class="modal-body">
-            <div class="portfolio-lightbox-media" id="pl-media"></div>
-            <div class="modal-text-content">
-                <span class="portfolio-category" id="pl-category"></span>
-                <h3 id="pl-title"></h3>
-                <p class="modal-member-description" id="pl-desc"></p>
-            </div>
-        </div>
+<dialog class="app-dialog" id="lightbox-dialog" aria-labelledby="lightbox-title">
+  <button class="dialog-close" type="button" aria-label="Close dialog"><svg><use href="#i-close"/></svg></button>
+  <div class="lightbox-dialog-body">
+    <div class="lightbox-cover"></div>
+    <div class="lightbox-body">
+      <span class="lightbox-tag"></span>
+      <h3 id="lightbox-title"></h3>
+      <p class="lightbox-desc"></p>
     </div>
-</div>
+  </div>
+</dialog>
 
-<a href="https://wa.me/+201063751915" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
-    <i class="fab fa-whatsapp"></i>
-    <span class="whatsapp-tooltip">
-        <span class="lang-en">Chat with us!</span>
-        <span class="lang-ar">تحدث معنا!</span>
-    </span>
+<!-- ============ WHATSAPP FLOAT ============ -->
+<a href="https://wa.me/201063751915" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+  <svg><use href="#i-whatsapp"/></svg>
+  <span class="whatsapp-tip"><span class="lang-en">Chat with us!</span><span class="lang-ar">تحدث معنا!</span></span>
 </a>
 
-<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,26 @@
+/* ==========================================================================
+   Layout — containers and section rhythm
+   ========================================================================== */
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: var(--container-pad);
+  position: relative;
+  z-index: var(--z-base);
+}
+
+.section {
+  padding-block: var(--sp-section);
+  position: relative;
+}
+
+/* soft alternating surface for rhythm between white sections */
+.section-alt {
+  background:
+    radial-gradient(60rem 30rem at 110% -10%, rgba(6, 182, 212, 0.07), transparent 60%),
+    radial-gradient(50rem 28rem at -10% 110%, rgba(124, 58, 237, 0.07), transparent 60%),
+    var(--surface);
+  border-block: 1px solid var(--line);
+}
