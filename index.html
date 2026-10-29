@@ -4,13 +4,71 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>VIVEM | Digital Marketing & Visual Creativity</title>
+<meta name="description" content="VIVEM is a creative digital agency specializing in graphic design, web & mobile development, social media management, and data-driven marketing strategies that deliver measurable results.">
+<meta name="keywords" content="VIVEM, digital marketing, graphic design, web development, mobile app development, social media management, Egypt">
+<meta name="author" content="VIVEM Digital">
+<meta property="og:type" content="website">
+<meta property="og:title" content="VIVEM | Digital Marketing & Visual Creativity">
+<meta property="og:description" content="We craft stunning designs and data-driven marketing strategies that deliver results. Let's build something amazing together.">
+<meta property="og:image" content="assets/images/Vivem.webp">
+<meta property="og:url" content="https://vivemdigital.com">
+<meta property="og:site_name" content="VIVEM">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="VIVEM | Digital Marketing & Visual Creativity">
+<meta name="twitter:description" content="We craft stunning designs and data-driven marketing strategies that deliver results.">
+<meta name="twitter:image" content="assets/images/Vivem.webp">
+<link rel="canonical" href="https://vivemdigital.com/">
+<meta name="theme-color" content="#002a91">
+<!-- Google Analytics 4 — uncomment and replace G-XXXXXXXXXX with your Measurement ID:
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+-->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://vivemdigital.com/#organization",
+      "name": "VIVEM",
+      "url": "https://vivemdigital.com/",
+      "logo": "https://vivemdigital.com/assets/images/Vivem.webp",
+      "description": "Creative digital agency specializing in graphic design, web and mobile development, social media management, and data-driven marketing strategies.",
+      "email": "vivemdigital@gmail.com",
+      "telephone": "+201063751915",
+      "sameAs": [
+        "https://www.facebook.com/vivemcreative",
+        "https://www.instagram.com/vivemdigital0",
+        "https://www.tiktok.com/@vivemdigital",
+        "https://www.linkedin.com/company/vivem"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://vivemdigital.com/#website",
+      "url": "https://vivemdigital.com/",
+      "name": "VIVEM",
+      "inLanguage": ["en", "ar"],
+      "publisher": { "@id": "https://vivemdigital.com/#organization" }
+    }
+  ]
+}
+</script>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="icon" type="image/svg+xml" href="assets/images/Vivem.svg">
 </head>
 <body>
+<div class="scroll-progress" id="scroll-progress" aria-hidden="true"></div>
 <header id="header">
     <div class="container">
         <nav class="navbar">
@@ -21,13 +79,11 @@
                 <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
                 <li><a href="#about"><span class="lang-en">About</span><span class="lang-ar">من نحن</span></a></li>
                 <li><a href="#services"><span class="lang-en">Services</span><span class="lang-ar">خدماتنا</span></a></li>
+                <li><a href="#portfolio"><span class="lang-en">Portfolio</span><span class="lang-ar">أعمالنا</span></a></li>
                 <li><a href="#team"><span class="lang-en">Team</span><span class="lang-ar">الفريق</span></a></li>
                 <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-ar">اتصل بنا</span></a></li>
             </ul>
              <div class="nav-utilities">
-                 <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
-                    <i class="fas fa-moon"></i>
-                </button>
                  <button class="lang-toggle" id="lang-toggle" aria-label="Toggle language">AR</button>
                  <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu">
                      <span></span>
@@ -76,7 +132,7 @@
         <div class="container">
             <div class="about-grid reveal-on-scroll">
                 <div class="about-image">
-                    <img src="assets/images/about-team.webp" alt="VIVEM Agency team working together">
+                    <img src="assets/images/about-team.webp" alt="VIVEM Agency team working together" loading="lazy">
                 </div>
                 <div class="about-content">
                     <span class="section-subtitle lang-en centered-subtitle">Who We Are</span>
@@ -109,6 +165,29 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="stats" aria-label="VIVEM in numbers">
+        <div class="container">
+            <div class="stats-grid reveal-on-scroll">
+                <div class="stat-item">
+                    <div class="stat-number" dir="ltr"><span class="counter" data-target="50" data-prefix="+">+50</span></div>
+                    <p class="stat-label"><span class="lang-en">Projects Completed</span><span class="lang-ar">مشروع منجز</span></p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" dir="ltr"><span class="counter" data-target="100" data-prefix="+">+100</span></div>
+                    <p class="stat-label"><span class="lang-en">Happy Clients</span><span class="lang-ar">عميل سعيد</span></p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" dir="ltr"><span class="counter" data-target="3" data-prefix="+">+3</span></div>
+                    <p class="stat-label"><span class="lang-en">Years of Experience</span><span class="lang-ar">سنوات خبرة</span></p>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" dir="ltr"><span class="counter" data-target="98" data-suffix="%">98%</span></div>
+                    <p class="stat-label"><span class="lang-en">Client Satisfaction</span><span class="lang-ar">رضا العملاء</span></p>
                 </div>
             </div>
         </div>
@@ -215,98 +294,95 @@
                 </p>
              </div>
              <div class="team-grid">
-                 <div class="team-member-card reveal-on-scroll" data-member-id="mohamed" data-linkedin="https://www.linkedin.com/in/YOUR_PROFILE">
+                 <div class="team-member-card reveal-on-scroll" data-member-id="mohamed">
                      <div class="member-img" style="background-image: url('assets/images/Mohamed_Farag.webp');"></div>
                      <div class="member-info">
                          <h4><span class="lang-en">Mohamed Farag</span><span class="lang-ar">محمد فرج</span></h4>
                          <p><span class="lang-en">CEO</span><span class="lang-ar">الرئيس التنفيذي</span></p>
                      </div>
-                     <div class="member-social-buttons">
-                         <a href="#" class="member-social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
                  </div>
-                 <div class="team-member-card reveal-on-scroll" data-member-id="zeyad" data-linkedin="https://www.linkedin.com/in/YOUR_PROFILE">
+                 <div class="team-member-card reveal-on-scroll" data-member-id="zeyad">
                      <div class="member-img" style="background-image: url('assets/images/Zeyad_Emad.webp');"></div>
                      <div class="member-info">
                          <h4><span class="lang-en">Zeyad Emad</span><span class="lang-ar">زياد عماد</span></h4>
                          <p><span class="lang-en">Operations Manager</span><span class="lang-ar">مدير العمليات</span></p>
                      </div>
-                      <div class="member-social-buttons">
-                         <a href="#" class="member-social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
                  </div>
-                 <div class="team-member-card reveal-on-scroll" data-member-id="seif" data-linkedin="https://www.linkedin.com/in/YOUR_PROFILE">
+                 <div class="team-member-card reveal-on-scroll" data-member-id="seif">
                      <div class="member-img" style="background-image: url('assets/images/Seif_Elfiky.webp');"></div>
                      <div class="member-info">
                          <h4><span class="lang-en">Seif Elfiky</span><span class="lang-ar">سيف الفقي</span></h4>
                          <p><span class="lang-en">Marketing Manager</span><span class="lang-ar">مدير التسويق</span></p>
                      </div>
-                     <div class="member-social-buttons">
-                         <a href="#" class="member-social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
                  </div>
-                 <div class="team-member-card reveal-on-scroll" data-member-id="alhassan" data-linkedin="https://www.linkedin.com/in/YOUR_PROFILE">
+                 <div class="team-member-card reveal-on-scroll" data-member-id="alhassan">
                      <div class="member-img" style="background-image: url('assets/images/Alhassan_Nabil.webp');"></div>
                      <div class="member-info">
                          <h4><span class="lang-en">Alhassan Nabil</span><span class="lang-ar">الحسن نبيل</span></h4>
                          <p><span class="lang-en">Video Editor</span><span class="lang-ar">مونتير</span></p>
                      </div>
-                     <div class="member-social-buttons">
-                         <a href="#" class="member-social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
                  </div>
-                  <div class="team-member-card reveal-on-scroll" data-member-id="hamza" data-linkedin="https://www.linkedin.com/in/YOUR_PROFILE">
+                  <div class="team-member-card reveal-on-scroll" data-member-id="hamza">
                       <div class="member-img" style="background-image: url('assets/images/Hamza_Soliman.webp');"></div>
                       <div class="member-info">
                           <h4><span class="lang-en">Hamza Soliman</span><span class="lang-ar">حمزة سليمان</span></h4>
                           <p><span class="lang-en">Visual Identity Designer</span><span class="lang-ar">مصمم هوية بصرية</span></p>
                       </div>
-                      <div class="member-social-buttons">
-                         <a href="#" class="member-social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
                   </div>
-                  <div class="team-member-card reveal-on-scroll" data-member-id="mahmoud" data-linkedin="https://www.linkedin.com/in/YOUR_PROFILE">
+                  <div class="team-member-card reveal-on-scroll" data-member-id="mahmoud">
                        <div class="member-img" style="background-image: url('assets/images/Mahmoud_Farag.webp');"></div>
                        <div class="member-info">
                            <h4><span class="lang-en">Mahmoud Farag</span><span class="lang-ar">محمود فرج</span></h4>
                            <p><span class="lang-en">Presentation Designer</span><span class="lang-ar">مصمم عروض تقديمية</span></p>
                        </div>
-                       <div class="member-social-buttons">
-                         <a href="#" class="member-social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
                    </div>
-                   <div class="team-member-card reveal-on-scroll" data-member-id="fatma" data-linkedin="https://www.linkedin.com/in/YOUR_PROFILE">
+                   <div class="team-member-card reveal-on-scroll" data-member-id="fatma">
                        <div class="member-img" style="background-image: url('assets/images/Fatma_Gohar.webp');"></div>
                        <div class="member-info">
                            <h4><span class="lang-en">Fatma Gohar</span><span class="lang-ar">فاطمة جوهر</span></h4>
                            <p><span class="lang-en">Social Media Account Manager</span><span class="lang-ar">مدير حسابات السوشيال ميديا</span></p>
                        </div>
-                       <div class="member-social-buttons">
-                         <a href="#" class="member-social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
                    </div>
-                   <div class="team-member-card reveal-on-scroll" data-member-id="amgad" data-linkedin="https://www.linkedin.com/in/YOUR_PROFILE">
+                   <div class="team-member-card reveal-on-scroll" data-member-id="amgad">
                        <div class="member-img" style="background-image: url('assets/images/Amgad_Ghozzy.webp');"></div>
                        <div class="member-info">
                            <h4><span class="lang-en">Amgad Ghozzy</span><span class="lang-ar">أمجد غزي</span></h4>
                            <p><span class="lang-en">Mobile App Developer</span><span class="lang-ar">مطور تطبيقات الجوال</span></p>
                        </div>
-                       <div class="member-social-buttons">
-                         <a href="#" class="member-social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                     </div>
                    </div>
-                    <div class="team-member-card reveal-on-scroll" data-member-id="ahmed" data-linkedin="https://www.linkedin.com/in/YOUR_PROFILE">
+                    <div class="team-member-card reveal-on-scroll" data-member-id="ahmed">
                         <div class="member-img" style="background-image: url('assets/images/Ahmed_Aljohari.webp');"></div>
                         <div class="member-info">
                             <h4><span class="lang-en">Ahmed Aljohari</span><span class="lang-ar">أحمد الجوهري</span></h4>
                             <p><span class="lang-en">Web Developer</span><span class="lang-ar">مطور مواقع</span></p>
                         </div>
-                        <div class="member-social-buttons">
-                            <a href="#" class="member-social-link linkedin-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
                     </div>
              </div>
          </div>
+    </section>
+
+    <section id="portfolio" class="portfolio section-spacing">
+        <div class="container">
+            <div class="portfolio-title reveal-on-scroll">
+                <span class="section-subtitle lang-en centered-subtitle">Portfolio</span>
+                <span class="section-subtitle lang-ar centered-subtitle">معرض الأعمال</span>
+                <h2 class="section-title">
+                    <span class="lang-en">Our Work</span>
+                    <span class="lang-ar">أعمالنا</span>
+                </h2>
+                <p>
+                    <span class="lang-en">A glimpse of what we design, build and launch for our clients. Click any project to learn more.</span>
+                    <span class="lang-ar">نماذج مما نصممه ونبنيه ونطلقه لعملائنا. اضغط على أي عمل لمعرفة المزيد.</span>
+                </p>
+            </div>
+            <div class="portfolio-filters reveal-on-scroll">
+                <button class="filter-btn active" data-filter="all"><span class="lang-en">All</span><span class="lang-ar">الكل</span></button>
+                <button class="filter-btn" data-filter="design"><span class="lang-en">Design</span><span class="lang-ar">تصميم</span></button>
+                <button class="filter-btn" data-filter="development"><span class="lang-en">Development</span><span class="lang-ar">تطوير</span></button>
+                <button class="filter-btn" data-filter="marketing"><span class="lang-en">Marketing</span><span class="lang-ar">تسويق</span></button>
+            </div>
+            <div class="portfolio-grid" id="portfolio-grid"></div>
+        </div>
     </section>
 
     <section id="contact" class="contact section-spacing">
@@ -369,6 +445,35 @@
                             </a>
                         </div>
                     </div>
+                    <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <h3><span class="lang-en">Send Us a Message</span><span class="lang-ar">أرسل لنا رسالة</span></h3>
+                        <p class="form-intro"><span class="lang-en">Fill out the form below and we'll get back to you as soon as possible.</span><span class="lang-ar">املأ النموذج التالي وسنعاود التواصل معك في أقرب وقت.</span></p>
+                        <div class="form-group">
+                            <label for="cf-name"><span class="lang-en">Name</span><span class="lang-ar">الاسم</span> <span class="required">*</span></label>
+                            <input type="text" id="cf-name" name="name" autocomplete="name" placeholder="Your name">
+                            <span class="form-error" id="cf-name-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-email"><span class="lang-en">Email</span><span class="lang-ar">البريد الإلكتروني</span> <span class="required">*</span></label>
+                            <input type="email" id="cf-email" name="email" autocomplete="email" placeholder="name@example.com">
+                            <span class="form-error" id="cf-email-error" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-subject"><span class="lang-en">Subject</span><span class="lang-ar">الموضوع</span></label>
+                            <input type="text" id="cf-subject" name="subject" placeholder="How can we help?">
+                        </div>
+                        <div class="form-group">
+                            <label for="cf-message"><span class="lang-en">Message</span><span class="lang-ar">الرسالة</span> <span class="required">*</span></label>
+                            <textarea id="cf-message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+                            <span class="form-error" id="cf-message-error" role="alert"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary form-submit">
+                            <span class="lang-en">Send Message</span><span class="lang-ar">إرسال الرسالة</span>
+                        </button>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -381,7 +486,7 @@
         <div class="footer-content">
             <div class="footer-info">
                  <a href="#hero" class="logo">
-                     <img src="assets/images/Vivem.svg" alt="VIVEM Logo" class="logo-img">
+                     <img src="assets/images/Vivem.svg" alt="VIVEM Logo" class="logo-img" loading="lazy">
                  </a>
                 <p>
                     <span class="lang-en">Crafting digital experiences that inspire action and drive growth.</span>
@@ -401,6 +506,7 @@
                     <li><a href="#hero"><span class="lang-en">Home</span><span class="lang-ar">الرئيسية</span></a></li>
                     <li><a href="#about"><span class="lang-en">About Us</span><span class="lang-ar">من نحن</span></a></li>
                     <li><a href="#services"><span class="lang-en">Services</span><span class="lang-ar">خدماتنا</span></a></li>
+                    <li><a href="#portfolio"><span class="lang-en">Portfolio</span><span class="lang-ar">أعمالنا</span></a></li>
                     <li><a href="#team"><span class="lang-en">Team</span><span class="lang-ar">الفريق</span></a></li>
                     <li><a href="#contact"><span class="lang-en">Contact</span><span class="lang-ar">اتصل بنا</span></a></li>
                 </ul>
@@ -449,6 +555,29 @@
         </div>
     </div>
 </div>
+
+<div class="modal-overlay" id="portfolio-lightbox">
+    <div class="modal-content portfolio-lightbox-content">
+        <button class="modal-close-btn" id="portfolio-lightbox-close" aria-label="Close modal">×</button>
+        <div class="modal-body">
+            <div class="portfolio-lightbox-media" id="pl-media"></div>
+            <div class="modal-text-content">
+                <span class="portfolio-category" id="pl-category"></span>
+                <h3 id="pl-title"></h3>
+                <p class="modal-member-description" id="pl-desc"></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="https://wa.me/+201063751915" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-tooltip">
+        <span class="lang-en">Chat with us!</span>
+        <span class="lang-ar">تحدث معنا!</span>
+    </span>
+</a>
+
 <script src="script.js"></script>
 </body>
 </html>

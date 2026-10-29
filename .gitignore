@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment
+.env
+.env.local
+
+# ZCode session files
+.zcode/
+
+# OS
+Thumbs.db
+.DS_Store
