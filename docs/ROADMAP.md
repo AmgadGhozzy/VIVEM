@@ -23,43 +23,43 @@
 - [x] حذف الأصول الزخرفية (hero/about/footer backgrounds ≈ 1.2MB + favicon.png المكرر + Vivem.webp)
 
 ### المرحلة 1 — الهوية ونظام التصميم
-- [ ] tokens.css: بالِت Aurora كاملة + تباعد + radius + ظلال + سلم خطوط clamp + z-index + سرعات
-- [ ] خطوط self-hosted عبر @fontsource (إلغاء Google Fonts CDN)
-- [ ] شعار SVG جديد + favicon + OG image 1200×630
-- [ ] SVG sprite داخلي بدل Font Awesome CDN
+- [x] tokens.css: بالِت Aurora كاملة + تباعد + radius + ظلال + سلم خطوط clamp + z-index + سرعات
+- [x] خطوط self-hosted عبر @fontsource (إلغاء Google Fonts CDN)
+- [x] شعار SVG جديد + favicon + OG image 1200×630
+- [x] SVG sprite داخلي بدل Font Awesome CDN
 
 ### المرحلة 2 — CSS و i18n من الصفر
-- [ ] CSS جديد: tokens → base → layout → components → utilities
-- [ ] RTL بالـ logical properties (صفر قواعد html[lang="ar"] مكررة)
-- [ ] نظام لغات: سكربت head يضبط lang قبل الرسم (لا وميض)، إخفاء بـ :lang()، صفر !important
-- [ ] تصحيحات بنيوية: ترتيب nav، إزالة inline styles، توحيد دور Hamza
+- [x] CSS جديد: tokens → base → layout → components → utilities
+- [x] RTL بالـ logical properties (صفر قواعد html[lang="ar"] مكررة)
+- [x] نظام لغات: سكربت head يضبط lang قبل الرسم (لا وميض)، إخفاء بـ :lang()، صفر !important
+- [x] تصحيحات بنيوية: ترتيب nav، إزالة inline styles، توحيد دور Hamza
 
 ### المرحلة 3 — الأقسام
-- [ ] Header زجاجي عائم + scrollspy + درج موبايل
-- [ ] Hero: Aurora mesh متحركة + badge + CTA + parallax
-- [ ] Marquee خدمات
-- [ ] About Bento + أيقونات SVG
-- [ ] Stats زجاجي
-- [ ] Services Bento grid
-- [ ] Team كروت + modal قابل للوصول (focus trap)
-- [ ] Portfolio كروت + placeholder مصممة + lightbox dialog
-- [ ] Testimonials carousel (جديد)
-- [ ] Contact + Footer + WhatsApp float
-- [ ] Micro-interactions + stagger reveals
+- [x] Header زجاجي عائم + scrollspy + درج موبايل
+- [x] Hero: Aurora mesh متحركة + badge + CTA + parallax
+- [x] Marquee خدمات
+- [x] About Bento + أيقونات SVG
+- [x] Stats زجاجي
+- [x] Services Bento grid
+- [x] Team كروت + modal قابل للوصول (focus trap)
+- [x] Portfolio كروت + placeholder مصممة + lightbox dialog
+- [x] Testimonials carousel (جديد)
+- [x] Contact + Footer + WhatsApp float
+- [x] Micro-interactions + stagger reveals
 
 ### المرحلة 4 — الأداء والمحتوى
-- [ ] ضغط صور الفريق والخدمات (الهدف < 1.5MB إجمالي)
-- [ ] src/data/*.js: team, portfolio, testimonials, config (FORM_ENDPOINT سطر واحد)
-- [ ] إزالة Font Awesome نهائيًا
-- [ ] Lighthouse: أداء 95+ / a11y 100 / SEO 100
+- [x] ضغط صور الفريق والخدمات (الهدف < 1.5MB إجمالي)
+- [x] src/data/*.js: team, portfolio, testimonials, config (FORM_ENDPOINT سطر واحد)
+- [x] إزالة Font Awesome نهائيًا
+- [x] Lighthouse: أداء 95+ / a11y 100 / SEO 100
 
 ### المرحلة 5 — SEO والإطلاق
-- [ ] Meta EN/AR + og:image مطلق + JSON-LD موسّع (Services)
-- [ ] GA4 عبر VITE_GA_ID (بيئة)
-- [ ] 404.html بالهوية الجديدة
-- [ ] README جديد بدليل تعديل المحتوى
-- [ ] QA: RTL، كروس-براوزر، كيبورد، تباين
-- [ ] دمج redesign/aurora-v2 → main (نشر تلقائي)
+- [x] Meta EN/AR + og:image مطلق + JSON-LD موسّع (Services)
+- [x] GA4 عبر VITE_GA_ID (بيئة)
+- [x] 404.html بالهوية الجديدة
+- [x] README جديد بدليل تعديل المحتوى
+- [x] QA: RTL، كروس-براوزر، كيبورد، تباين
+- [x] دمج redesign/aurora-v2 → main (نشر تلقائي)
 
 ## محتوى بانتظار العميل (خارج نطاق الكود)
 - صور أعمال بورتفوليو حقيقية → `src/data/portfolio.js`

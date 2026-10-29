@@ -3,6 +3,7 @@
    ========================================================================== */
 
 dialog.app-dialog {
+  margin: auto; /* restore native centering — the global reset zeroes it */
   width: min(680px, calc(100vw - 2.5rem));
   border: 1px solid rgba(255, 255, 255, 0.75);
   border-radius: var(--r-xl);
@@ -59,13 +60,17 @@ dialog.app-dialog[open] { animation: dialog-in 380ms var(--ease-out); }
 @media (max-width: 560px) {
   .team-dialog-body { grid-template-columns: 1fr; text-align: center; }
 }
+.team-dialog-photo-wrap {
+  position: relative;
+  border-radius: var(--r-lg);
+  overflow: hidden;
+}
 .team-dialog-photo {
+  display: block;
   width: 100%;
   aspect-ratio: 1;
-  border-radius: var(--r-lg);
   object-fit: cover;
-  border: 3px solid transparent;
-  background: var(--grad-aurora) border-box;
+  border-radius: var(--r-lg);
 }
 .team-dialog-body h3 { font-size: var(--fs-xl); }
 .team-dialog-role {

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Same language mechanism as the main site: pre-paint, localStorage key shared -->
+<script>
+(function () {
+  try {
+    var l = localStorage.getItem('vivem-lang');
+    if (l === 'ar' || l === 'en') document.documentElement.lang = l;
+  } catch (e) { /* noop */ }
+  document.documentElement.dir = document.documentElement.lang === 'ar' ? 'rtl' : 'ltr';
+})();
+</script>
+<title>Page Not Found | VIVEM</title>
+<meta name="robots" content="noindex">
+<link rel="canonical" href="https://vivemdigital.com/">
+<meta name="theme-color" content="#f8faff">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<style>
+  /* Self-contained styles (404.html is served raw by GitHub Pages — no build) */
+  :root {
+    --aurora-1: #7c3aed; --aurora-2: #2563eb; --aurora-3: #06b6d4;
+    --bg: #f8faff; --surface: #ffffff; --ink: #0f172a; --ink-2: #334155; --ink-3: #5b6b83;
+    --line: #e3e9f5; --line-strong: #cbd5ec;
+    --grad: linear-gradient(120deg, var(--aurora-1), var(--aurora-2), var(--aurora-3));
+    --r-full: 999px;
+    --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: 'Inter', 'IBM Plex Sans Arabic', system-ui, sans-serif;
+    background: var(--bg); color: var(--ink-2); line-height: 1.7;
+    min-height: 100svh; display: grid; place-items: center; overflow-x: clip;
+    padding: 2rem;
+  }
+  [lang='en'] .lang-ar, [lang='ar'] .lang-en { display: none; }
+  html[lang='ar'] body { font-family: 'IBM Plex Sans Arabic', 'Inter', system-ui, sans-serif; }
+  .notfound {
+    position: relative; text-align: center; max-width: 560px;
+    padding: clamp(2rem, 6vw, 4rem);
+  }
+  .nf-bg {
+    position: fixed; inset: 0; z-index: -1; pointer-events: none;
+    background:
+      radial-gradient(40rem 40rem at 15% 10%, rgba(124, 58, 237, 0.14), transparent 65%),
+      radial-gradient(36rem 36rem at 85% 85%, rgba(6, 182, 212, 0.13), transparent 65%),
+      radial-gradient(28rem 28rem at 80% 15%, rgba(236, 72, 153, 0.08), transparent 65%);
+  }
+  .nf-logo { height: 36px; width: auto; margin-inline: auto; margin-bottom: 2.5rem; }
+  .nf-code {
+    font-size: clamp(6rem, 22vw, 10rem); font-weight: 700; line-height: 1;
+    letter-spacing: -0.03em;
+    background: var(--grad); -webkit-background-clip: text; background-clip: text;
+    color: transparent; font-family: 'Space Grotesk', 'Inter', sans-serif;
+    font-variant-numeric: tabular-nums;
+  }
+  h1 { color: var(--ink); font-size: clamp(1.3rem, 4vw, 1.8rem); margin: 1.2rem 0 0.8rem; }
+  p { color: var(--ink-3); max-width: 42ch; margin-inline: auto; margin-bottom: 2.2rem; }
+  .nf-btn {
+    display: inline-flex; align-items: center; gap: 0.6rem;
+    padding: 0.9rem 2.1rem; border-radius: var(--r-full);
+    background: var(--grad); color: #fff; font-weight: 600; text-decoration: none;
+    box-shadow: 0 8px 30px rgba(124, 58, 237, 0.28);
+    transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);
+  }
+  .nf-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 40px rgba(124, 58, 237, 0.38); color: #fff; }
+  .nf-lang {
+    margin-top: 2.5rem; display: inline-block;
+    padding: 0.45rem 1rem; border-radius: var(--r-full);
+    border: 1px solid var(--line-strong); background: var(--surface);
+    color: var(--ink); font-weight: 700; font-size: 0.8rem; cursor: pointer;
+  }
+  .nf-lang:hover { border-color: var(--aurora-2); color: var(--aurora-2); }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="nf-bg" aria-hidden="true"></div>
+<main class="notfound">
+  <svg class="nf-logo" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VIVEM">
+    <defs><linearGradient id="aurora" gradientUnits="userSpaceOnUse" x1="222.5" y1="0" x2="677.5" y2="0">
+      <stop offset="0" stop-color="#7c3aed"/><stop offset="0.5" stop-color="#2563eb"/><stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient></defs>
+    <g fill="none" stroke="url(#aurora)" stroke-width="22.1" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M222.5 85.0 L260.2 215.0 L297.9 85.0"/>
+      <path d="M331.7 85.0 L331.7 215.0"/>
+      <path d="M378.5 85.0 L416.2 215.0 L453.9 85.0"/>
+      <path d="M487.7 85.0 L547.5 85.0"/>
+      <path d="M487.7 85.0 L487.7 215.0"/>
+      <path d="M487.7 215.0 L547.5 215.0"/>
+      <path d="M487.7 150.0 L537.1 150.0"/>
+      <path d="M581.3 215.0 L581.3 85.0 L629.4 170.8 L677.5 85.0 L677.5 215.0"/>
+    </g>
+  </svg>
+  <div class="nf-code" dir="ltr">404</div>
+  <h1><span class="lang-en">This page drifted into the aurora.</span><span class="lang-ar">هذه الصفحة ضاعت في الفضاء.</span></h1>
+  <p>
+    <span class="lang-en">The page you're looking for doesn't exist or has moved. Let's take you back home.</span>
+    <span class="lang-ar">الصفحة التي تبحث عنها غير موجودة أو تم نقلها. لنعد بك إلى الصفحة الرئيسية.</span>
+  </p>
+  <a href="/" class="nf-btn"><span class="lang-en">Back to Home</span><span class="lang-ar">العودة للرئيسية</span></a>
+  <br>
+  <button class="nf-lang" type="button" onclick="var n=document.documentElement.lang==='ar'?'en':'ar';document.documentElement.lang=n;document.documentElement.dir=n==='ar'?'rtl':'ltr';try{localStorage.setItem('vivem-lang',n)}catch(e){};this.textContent=n==='ar'?'EN':'AR'">AR</button>
+</main>
+</body>
+</html>

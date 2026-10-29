@@ -377,6 +377,7 @@
 }
 
 .portfolio-body {
+  display: block;
   padding: var(--sp-5);
 }
 .portfolio-body h3 {
@@ -570,6 +571,7 @@
 
 .team-photo {
   position: relative;
+  display: block;
   width: 128px;
   height: 128px;
   margin-inline: auto;
