@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="VIVEM">
+  <defs><linearGradient id="aurora" gradientUnits="userSpaceOnUse" x1="222.5" y1="0" x2="677.5" y2="0">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="0.5" stop-color="#2563eb"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient></defs>
+  <g fill="none" stroke="url(#aurora)" stroke-width="22.1" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M222.5 85.0 L260.2 215.0 L297.9 85.0"/>
+  <path d="M331.7 85.0 L331.7 215.0"/>
+  <path d="M378.5 85.0 L416.2 215.0 L453.9 85.0"/>
+  <path d="M487.7 85.0 L547.5 85.0"/>
+  <path d="M487.7 85.0 L487.7 215.0"/>
+  <path d="M487.7 215.0 L547.5 215.0"/>
+  <path d="M487.7 150.0 L537.1 150.0"/>
+  <path d="M581.3 215.0 L581.3 85.0 L629.4 170.8 L677.5 85.0 L677.5 215.0"/>
+</g>
+</svg>
