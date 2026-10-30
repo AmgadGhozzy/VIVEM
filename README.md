@@ -1,7 +1,7 @@
 # VIVEM — Aurora Tech Redesign
 
 > Bilingual (EN/AR) creative agency website — vanilla HTML/CSS/JS on Vite, custom "Aurora Tech" design system, fully RTL-aware.
-> **Live:** [vivemdigital.com](https://vivemdigital.com) · **Developer:** [Amgad Ghozzy](https://github.com/AmgadGhozzy)
+> **Live:** [amgadghozzy.github.io/VIVEM](https://amgadghozzy.github.io/VIVEM/) · **Developer:** [Amgad Ghozzy](https://github.com/AmgadGhozzy)
 
 ![VIVEM hero — start-aligned editorial hero with aurora gradient](docs/screenshots/hero.webp)
 
