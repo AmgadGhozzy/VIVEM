@@ -336,7 +336,9 @@
 
 .portfolio-card {
   position: relative;
-  display: block;
+  display: flex;  /* flex column: buttons vertically center content, which
+                     leaves white gaps above covers in taller rows */
+  flex-direction: column;
   width: 100%;
   text-align: start;
   border-radius: var(--r-lg);
