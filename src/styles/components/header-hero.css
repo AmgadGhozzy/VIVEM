@@ -178,8 +178,8 @@
   z-index: var(--z-decor);
   background:
     radial-gradient(42rem 42rem at 12% 8%, rgba(155, 135, 240, 0.12), transparent 65%),
-    radial-gradient(38rem 38rem at 88% 18%, rgba(86, 174, 210, 0.11), transparent 65%),
-    radial-gradient(46rem 40rem at 78% 92%, rgba(107, 132, 230, 0.10), transparent 65%),
+    radial-gradient(38rem 38rem at 88% 18%, rgba(104, 161, 226, 0.11), transparent 65%),
+    radial-gradient(46rem 40rem at 78% 92%, rgba(124, 140, 234, 0.10), transparent 65%),
     radial-gradient(30rem 30rem at 18% 88%, rgba(236, 72, 153, 0.07), transparent 65%);
 }
 .hero-blob {
@@ -199,7 +199,7 @@
 .hero-blob--2 {
   width: 30rem; height: 30rem;
   inset-block-end: -6rem; inset-inline-end: -6rem;
-  background: radial-gradient(circle, rgba(86, 174, 210, 0.32), transparent 70%);
+  background: radial-gradient(circle, rgba(104, 161, 226, 0.32), transparent 70%);
   animation: drift-2 32s var(--ease-in-out) infinite alternate;
 }
 .hero-blob--3 {

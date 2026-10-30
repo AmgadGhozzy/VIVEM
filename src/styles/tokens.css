@@ -6,8 +6,8 @@
 :root {
   /* -- Aurora palette (softened: closer hues, calmer saturation) ------------ */
   --aurora-1: #9b87f0; /* violet       */
-  --aurora-2: #6b84e6; /* indigo-blue  */
-  --aurora-3: #56aed2; /* dusted cyan  */
+  --aurora-2: #7c8cea; /* indigo-blue  */
+  --aurora-3: #68a1e2; /* dusted cyan  */
   --accent: #ec4899;   /* pink touch   */
 
   /* Semantic ink & surfaces (light-only identity — no dark mode by decision) */
@@ -25,12 +25,12 @@
   /* Brand aliases (components reference these, never raw aurora stops) */
   --brand: var(--aurora-2);
   --brand-strong: #4059c8;
-  --brand-soft: rgba(107, 132, 230, 0.10);
+  --brand-soft: rgba(124, 140, 234, 0.10);
   --on-brand: #ffffff;
 
   /* -- Gradients ----------------------------------------------------------- */
   --grad-aurora: linear-gradient(120deg, var(--aurora-1) 0%, var(--aurora-2) 48%, var(--aurora-3) 100%);
-  --grad-aurora-soft: linear-gradient(120deg, rgba(155, 135, 240, 0.09) 0%, rgba(107, 132, 230, 0.08) 48%, rgba(86, 174, 210, 0.11) 100%);
+  --grad-aurora-soft: linear-gradient(120deg, rgba(155, 135, 240, 0.09) 0%, rgba(124, 140, 234, 0.08) 48%, rgba(104, 161, 226, 0.11) 100%);
   --grad-aurora-animated: linear-gradient(120deg, var(--aurora-1), var(--aurora-2), var(--aurora-3), var(--aurora-1));
   --grad-accent: linear-gradient(120deg, var(--accent), var(--aurora-1));
 
@@ -74,11 +74,11 @@
   --r-full: 999px;
 
   /* -- Elevation (aurora-tinted, layered) ----------------------------------- */
-  --shadow-1: 0 1px 2px rgba(15, 23, 42, 0.05), 0 4px 12px rgba(107, 132, 230, 0.06);
-  --shadow-2: 0 2px 6px rgba(15, 23, 42, 0.06), 0 12px 32px rgba(107, 132, 230, 0.10);
-  --shadow-3: 0 4px 10px rgba(15, 23, 42, 0.07), 0 24px 56px rgba(107, 132, 230, 0.14);
-  --shadow-glow: 0 8px 30px rgba(107, 132, 230, 0.24);
-  --ring-focus: 0 0 0 3px rgba(107, 132, 230, 0.35);
+  --shadow-1: 0 1px 2px rgba(15, 23, 42, 0.05), 0 4px 12px rgba(124, 140, 234, 0.06);
+  --shadow-2: 0 2px 6px rgba(15, 23, 42, 0.06), 0 12px 32px rgba(124, 140, 234, 0.10);
+  --shadow-3: 0 4px 10px rgba(15, 23, 42, 0.07), 0 24px 56px rgba(124, 140, 234, 0.14);
+  --shadow-glow: 0 8px 30px rgba(124, 140, 234, 0.24);
+  --ring-focus: 0 0 0 3px rgba(124, 140, 234, 0.35);
 
   /* -- Motion ---------------------------------------------------------------- */
   --ease-out: cubic-bezier(0.22, 1, 0.36, 1);

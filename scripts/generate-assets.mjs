@@ -33,8 +33,8 @@ function wordMetrics() {
 function wordGrad(id, x0, fullW) {
   return `<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="${x0.toFixed(1)}" y1="0" x2="${(x0 + fullW).toFixed(1)}" y2="0">
       <stop offset="0" stop-color="#9b87f0"/>
-      <stop offset="0.5" stop-color="#6b84e6"/>
-      <stop offset="1" stop-color="#56aed2"/>
+      <stop offset="0.5" stop-color="#7c8cea"/>
+      <stop offset="1" stop-color="#68a1e2"/>
     </linearGradient>`;
 }
 
@@ -65,8 +65,8 @@ function wordSvg({ capH, x0, y0, id }) {
 function gradDef(id, x1 = 0, y1 = 0, x2 = 1, y2 = 0) {
   return `<linearGradient id="${id}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}">
       <stop offset="0" stop-color="#9b87f0"/>
-      <stop offset="0.5" stop-color="#6b84e6"/>
-      <stop offset="1" stop-color="#56aed2"/>
+      <stop offset="0.5" stop-color="#7c8cea"/>
+      <stop offset="1" stop-color="#68a1e2"/>
     </linearGradient>`;
 }
 
@@ -115,8 +115,8 @@ function buildOgSvg() {
       <stop offset="1" stop-color="#9b87f0" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="blob2" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#56aed2" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#56aed2" stop-opacity="0"/>
+      <stop offset="0" stop-color="#68a1e2" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#68a1e2" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="blob3" cx="0.5" cy="0.5" r="0.5">
       <stop offset="0" stop-color="#ec4899" stop-opacity="0.16"/>
