@@ -1,8 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="VIVEM">
   <defs><linearGradient id="aurora" gradientUnits="userSpaceOnUse" x1="222.5" y1="0" x2="677.5" y2="0">
-      <stop offset="0" stop-color="#8e90ee"/>
-      <stop offset="0.5" stop-color="#7a89ea"/>
-      <stop offset="1" stop-color="#6ba2e0"/>
+      <stop offset="0" stop-color="#6e6bf5"/>
+      <stop offset="0.5" stop-color="#4a66f5"/>
+      <stop offset="1" stop-color="#2f93ee"/>
     </linearGradient></defs>
   <g fill="none" stroke="url(#aurora)" stroke-width="22.1" stroke-linecap="round" stroke-linejoin="round">
   <path d="M222.5 85.0 L260.2 215.0 L297.9 85.0"/>

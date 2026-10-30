@@ -118,7 +118,7 @@
   inset: 0;
   background:
     radial-gradient(30rem 18rem at 20% 0%, rgba(255, 255, 255, 0.16), transparent 60%),
-    radial-gradient(26rem 18rem at 85% 100%, rgba(107, 162, 224, 0.26), transparent 60%);
+    radial-gradient(26rem 18rem at 85% 100%, rgba(47, 147, 238, 0.26), transparent 60%);
 }
 .stats .container {
   display: grid;
@@ -225,7 +225,7 @@
   height: 54px;
   border-radius: var(--r-md);
   background: var(--grad-aurora-soft);
-  border: 1px solid rgba(122, 137, 234, 0.14);
+  border: 1px solid rgba(74, 102, 245, 0.14);
   color: var(--brand);
   margin-block-end: var(--sp-4);
   transition: transform var(--t-med) var(--ease-out), background var(--t-med);
@@ -367,9 +367,9 @@
   overflow: hidden;
 }
 /* designed abstract covers per category (placeholder until real work arrives) */
-.portfolio-cover--design { background: linear-gradient(135deg, #8e90ee 0%, #7f7bee 55%, #ec4899 100%); }
-.portfolio-cover--development { background: linear-gradient(135deg, #7a89ea 0%, #5b94dd 60%, #6ba2e0 100%); }
-.portfolio-cover--marketing { background: linear-gradient(135deg, #6b8fe6 0%, #8e90ee 100%); }
+.portfolio-cover--design { background: linear-gradient(135deg, #6e6bf5 0%, #5648f0 55%, #ec4899 100%); }
+.portfolio-cover--development { background: linear-gradient(135deg, #4a66f5 0%, #1f8ae8 60%, #2f93ee 100%); }
+.portfolio-cover--marketing { background: linear-gradient(135deg, #4f6df2 0%, #6e6bf5 100%); }
 
 .portfolio-cover::before {
   content: '';

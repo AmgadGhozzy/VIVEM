@@ -177,9 +177,9 @@
   inset: 0;
   z-index: var(--z-decor);
   background:
-    radial-gradient(42rem 42rem at 12% 8%, rgba(142, 144, 238, 0.14), transparent 65%),
-    radial-gradient(38rem 38rem at 88% 18%, rgba(107, 162, 224, 0.13), transparent 65%),
-    radial-gradient(46rem 40rem at 78% 92%, rgba(122, 137, 234, 0.12), transparent 65%),
+    radial-gradient(42rem 42rem at 12% 8%, rgba(110, 107, 245, 0.14), transparent 65%),
+    radial-gradient(38rem 38rem at 88% 18%, rgba(47, 147, 238, 0.13), transparent 65%),
+    radial-gradient(46rem 40rem at 78% 92%, rgba(74, 102, 245, 0.12), transparent 65%),
     radial-gradient(30rem 30rem at 18% 88%, rgba(236, 72, 153, 0.06), transparent 65%);
 }
 
