@@ -129,7 +129,7 @@
 .form-group textarea:focus-visible {
   outline: none;
   border-color: var(--aurora-2);
-  box-shadow: 0 0 0 4px rgba(79, 109, 242, 0.14);
+  box-shadow: 0 0 0 4px rgba(107, 132, 230, 0.14);
 }
 
 .form-group.has-error input,
@@ -189,8 +189,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(38rem 20rem at 8% 0%, rgba(139, 92, 246, 0.22), transparent 60%),
-    radial-gradient(34rem 20rem at 95% 100%, rgba(56, 182, 227, 0.16), transparent 60%);
+    radial-gradient(38rem 20rem at 8% 0%, rgba(155, 135, 240, 0.22), transparent 60%),
+    radial-gradient(34rem 20rem at 95% 100%, rgba(86, 174, 210, 0.16), transparent 60%);
   pointer-events: none;
 }
 .site-footer .container {
