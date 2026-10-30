@@ -562,7 +562,11 @@
   box-shadow: var(--shadow-glow);
 }
 .carousel-btn svg { width: 17px; height: 17px; }
-[dir='rtl'] .carousel-btn svg { transform: scaleX(-1); }
+/* both buttons share one right-pointing arrow glyph: prev rotates 180° in LTR;
+   in RTL the flip moves to next so prev points right (correct for RTL) */
+.carousel-btn--prev svg { transform: rotate(180deg); }
+[dir='rtl'] .carousel-btn--prev svg { transform: none; }
+[dir='rtl'] .carousel-btn--next svg { transform: scaleX(-1); }
 
 .carousel-dots {
   display: flex;
