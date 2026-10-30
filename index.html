@@ -146,6 +146,24 @@
   <!-- ============ HERO ============ -->
   <section id="hero" class="hero">
     <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-dots" aria-hidden="true"></div>
+    <div class="hero-waves" aria-hidden="true">
+      <svg viewBox="0 0 2880 220" preserveAspectRatio="xMidYMax slice">
+        <defs>
+          <linearGradient id="wave-grad" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="2880" y2="0">
+            <stop offset="0" stop-color="#6e6bf5"/>
+            <stop offset="0.5" stop-color="#4a66f5"/>
+            <stop offset="1" stop-color="#2f93ee"/>
+          </linearGradient>
+          <path id="wave-path" fill="none" d="M0 90 C120 30 240 30 360 90 S600 150 720 90 S960 30 1080 90 S1320 150 1440 90 S1680 30 1800 90 S2040 150 2160 90 S2400 30 2520 90 S2760 150 2880 90"/>
+        </defs>
+        <g class="wave-lines" stroke="url(#wave-grad)" stroke-width="1.5">
+          <use href="#wave-path" y="0" opacity="0.4"/>
+          <use href="#wave-path" y="34" opacity="0.24"/>
+          <use href="#wave-path" y="68" opacity="0.13"/>
+        </g>
+      </svg>
+    </div>
 
     <div class="hero-chip hero-chip--1" aria-hidden="true"><svg><use href="#i-palette"/></svg></div>
     <div class="hero-chip hero-chip--2" aria-hidden="true"><svg><use href="#i-monitor"/></svg></div>

@@ -184,6 +184,45 @@
 }
 
 /* floating glass chips (parallax targets) */
+
+/* Dot grid — masked to the quiet side of the hero, mirrors in RTL */
+.hero-dots {
+  position: absolute;
+  inset: 0;
+  z-index: var(--z-decor);
+  background-image: radial-gradient(rgba(74, 102, 245, 0.15) 1.2px, transparent 1.2px);
+  background-size: 26px 26px;
+  -webkit-mask-image: radial-gradient(52rem 36rem at 78% 22%, #000, transparent 72%);
+  mask-image: radial-gradient(52rem 36rem at 78% 22%, #000, transparent 72%);
+}
+[dir='rtl'] .hero-dots {
+  -webkit-mask-image: radial-gradient(52rem 36rem at 22% 22%, #000, transparent 72%);
+  mask-image: radial-gradient(52rem 36rem at 22% 22%, #000, transparent 72%);
+}
+
+/* Wave lines — layered contour strokes drifting slowly at the hero base */
+.hero-waves {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: -2px;
+  z-index: var(--z-decor);
+  height: 230px;
+  overflow: clip;
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(to top, #000 55%, transparent);
+  mask-image: linear-gradient(to top, #000 55%, transparent);
+}
+.hero-waves svg {
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  width: 2880px;
+  height: 220px;
+  animation: wave-drift 46s linear infinite;
+}
+[dir='rtl'] .hero-waves svg { animation-direction: reverse; }
+@keyframes wave-drift { to { transform: translateX(-720px); } }
+
 .hero-chip {
   position: absolute;
   z-index: var(--z-decor);
