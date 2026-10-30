@@ -17,12 +17,14 @@ function coverMarkup(item) {
 function cardMarkup(item, index) {
   const lang = getLang();
   const cat = portfolioCategories[item.category];
+  const featured = index === 0 && activeFilter === 'all';
   return `
-  <button class="portfolio-card" type="button" data-index="${index}"
+  <button class="portfolio-card${featured ? ' portfolio-card--featured' : ''}" type="button" data-index="${index}"
           aria-haspopup="dialog" style="--stagger:${(index % 6) * 70}ms">
     <span class="portfolio-cover portfolio-cover--${item.category}">
       ${coverMarkup(item)}
       <span class="cover-tag">${cat[lang]}</span>
+      <span class="cover-index" aria-hidden="true">0${index + 1}</span>
     </span>
     <span class="portfolio-body">
       <h3>${item.title[lang]}</h3>

@@ -153,14 +153,43 @@ html[lang='ar'] .lang-en { display: none; }
   50% { box-shadow: 0 0 0 5px rgba(37, 99, 235, 0); }
 }
 
-/* -- Section scaffolding ------------------------------------------------------ */
+/* -- Section scaffolding (editorial system: numbered start-aligned heads) --- */
 .section-head {
-  max-width: 720px;
-  margin-inline: auto;
-  text-align: center;
-  margin-bottom: var(--sp-8);
+  max-width: 780px;
+  margin-block-end: var(--sp-8);
 }
-.section-head p { margin-top: var(--sp-4); color: var(--ink-3); }
+.section-head h2 {
+  font-size: clamp(2rem, 1.55rem + 2.3vw, 3.1rem);
+  letter-spacing: -0.02em;
+}
+.section-head p { margin-top: var(--sp-4); color: var(--ink-3); max-width: 56ch; }
+
+/* numbered index label — replaces the repeated badge pill at every section */
+.section-index {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-block-end: var(--sp-4);
+  font-family: var(--font-display);
+  font-size: var(--fs-xs);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+.section-index i {
+  font-style: normal;
+  background: var(--grad-aurora);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.section-index::after {
+  content: '';
+  width: 52px;
+  height: 1px;
+  background: var(--line-strong);
+}
 
 /* Gradient text */
 .gradient-text {
