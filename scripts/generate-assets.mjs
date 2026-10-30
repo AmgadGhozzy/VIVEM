@@ -32,9 +32,9 @@ function wordMetrics() {
 // zero-area bounding boxes, which silently drop objectBoundingBox gradients.
 function wordGrad(id, x0, fullW) {
   return `<linearGradient id="${id}" gradientUnits="userSpaceOnUse" x1="${x0.toFixed(1)}" y1="0" x2="${(x0 + fullW).toFixed(1)}" y2="0">
-      <stop offset="0" stop-color="#7c3aed"/>
-      <stop offset="0.5" stop-color="#2563eb"/>
-      <stop offset="1" stop-color="#06b6d4"/>
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="0.5" stop-color="#4f6df2"/>
+      <stop offset="1" stop-color="#38b6e3"/>
     </linearGradient>`;
 }
 
@@ -64,9 +64,9 @@ function wordSvg({ capH, x0, y0, id }) {
 
 function gradDef(id, x1 = 0, y1 = 0, x2 = 1, y2 = 0) {
   return `<linearGradient id="${id}" x1="${x1}" y1="${y1}" x2="${x2}" y2="${y2}">
-      <stop offset="0" stop-color="#7c3aed"/>
-      <stop offset="0.5" stop-color="#2563eb"/>
-      <stop offset="1" stop-color="#06b6d4"/>
+      <stop offset="0" stop-color="#8b5cf6"/>
+      <stop offset="0.5" stop-color="#4f6df2"/>
+      <stop offset="1" stop-color="#38b6e3"/>
     </linearGradient>`;
 }
 
@@ -111,12 +111,12 @@ function buildOgSvg() {
   <defs>
     ${grad}
     <radialGradient id="blob1" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#7c3aed" stop-opacity="0.26"/>
-      <stop offset="1" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="blob2" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#06b6d4" stop-opacity="0.30"/>
-      <stop offset="1" stop-color="#06b6d4" stop-opacity="0"/>
+      <stop offset="0" stop-color="#38b6e3" stop-opacity="0.30"/>
+      <stop offset="1" stop-color="#38b6e3" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="blob3" cx="0.5" cy="0.5" r="0.5">
       <stop offset="0" stop-color="#ec4899" stop-opacity="0.16"/>

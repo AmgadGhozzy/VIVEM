@@ -98,7 +98,7 @@ html[lang='ar'] .lang-en { display: none; }
 }
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 40px rgba(124, 58, 237, 0.38);
+  box-shadow: 0 12px 40px rgba(139, 92, 246, 0.38);
   color: var(--on-brand);
 }
 /* sheen sweep on hover */
@@ -134,7 +134,7 @@ html[lang='ar'] .lang-en { display: none; }
   padding: 0.4rem 1rem;
   border-radius: var(--r-full);
   background: var(--brand-soft);
-  border: 1px solid rgba(37, 99, 235, 0.18);
+  border: 1px solid rgba(79, 109, 242, 0.18);
   color: var(--brand-strong);
   font-size: var(--fs-xs);
   font-weight: 600;
@@ -149,8 +149,8 @@ html[lang='ar'] .lang-en { display: none; }
   animation: pulse-dot 2.4s var(--ease-in-out) infinite;
 }
 @keyframes pulse-dot {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 99, 235, 0.45); }
-  50% { box-shadow: 0 0 0 5px rgba(37, 99, 235, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(79, 109, 242, 0.4); }
+  50% { box-shadow: 0 0 0 5px rgba(79, 109, 242, 0); }
 }
 
 /* -- Section scaffolding (editorial system: numbered start-aligned heads) --- */

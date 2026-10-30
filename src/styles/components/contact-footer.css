@@ -129,7 +129,7 @@
 .form-group textarea:focus-visible {
   outline: none;
   border-color: var(--aurora-2);
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.14);
+  box-shadow: 0 0 0 4px rgba(79, 109, 242, 0.14);
 }
 
 .form-group.has-error input,
@@ -174,11 +174,14 @@
    Footer
    ========================================================================== */
 
+/* Footer as a floating rounded card over the light canvas */
 .site-footer {
   position: relative;
   background: var(--ink);
   color: #cbd5e1;
   overflow: clip;
+  margin: 0 var(--container-pad) var(--sp-4);
+  border-radius: var(--r-xl);
 }
 /* aurora glow over dark footer */
 .site-footer::before {
@@ -186,8 +189,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(38rem 20rem at 8% 0%, rgba(124, 58, 237, 0.22), transparent 60%),
-    radial-gradient(34rem 20rem at 95% 100%, rgba(6, 182, 212, 0.16), transparent 60%);
+    radial-gradient(38rem 20rem at 8% 0%, rgba(139, 92, 246, 0.22), transparent 60%),
+    radial-gradient(34rem 20rem at 95% 100%, rgba(56, 182, 227, 0.16), transparent 60%);
   pointer-events: none;
 }
 .site-footer .container {
